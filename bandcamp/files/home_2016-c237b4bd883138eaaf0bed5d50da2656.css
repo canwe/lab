@@ -571,7 +571,7 @@ elements. But support for CSS transitions on generated elements is spotty as of 
 
 /* trackpipe/public/css/country_flags.css */
 .flag-icon {
-    background: transparent url('./_sprite-country-flags-20170630.png') no-repeat 0 0;
+    background: transparent url('_sprite-country-flags-20170630.png') no-repeat 0 0;
     background-size: 210px 187px;
     display: none;
     height: 11px;
@@ -826,7 +826,7 @@ elements. But support for CSS transitions on generated elements is spotty as of 
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
     .flag-icon {
-        background: transparent url('./_sprite-country-flags-20170630@2x.png') no-repeat 0 0;
+        background: transparent url('_sprite-country-flags-20170630@2x.png') no-repeat 0 0;
         background-size: 225px 170px;
         display: none;
         height: 10px;
