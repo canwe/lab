@@ -60,9 +60,11 @@ function bubbleChart() {
 
   // Nice looking colors - no reason to buck the trend
   // @v4 scales now have a flattened naming scheme
-  var fillColor = d3.scaleOrdinal()
-    .domain(['low', 'medium', 'high'])
-    .range(['#d84b2a', '#beccae', '#7aa25c']);
+  // https://stackoverflow.com/questions/54516735/how-to-get-different-shades-of-colors-for-a-single-color
+  var fillColor = d3.scaleLinear()
+    .domain([0, 100000000])
+    .range(['#d6effc', '#fdd4e9'])
+    .interpolate(d3.interpolateRgb.gamma(1.9));
 
   var myNodes = null;
   /*
@@ -101,8 +103,8 @@ function bubbleChart() {
         org: d.organization,
         group: d.group,
         year: d.start_year,
-        x: Math.random() * 900,
-        y: Math.random() * 800
+        x: Math.random() * (940 - radiusScale(+d.total_amount)),
+        y: Math.random() * (600 - radiusScale(+d.total_amount))
       };
     });
 
@@ -159,9 +161,9 @@ function bubbleChart() {
     var bubblesE = bubbles.enter().append('circle')
       .classed('bubble', true)
       .attr('r', 0)
-      .attr('fill', function (d) { return fillColor(d.group); })
-      .attr('stroke', function (d) { return d3.rgb(fillColor(d.group)).darker(); })
-      .attr('stroke-width', 2)
+      .attr('fill', function (d) { return fillColor(d.value); })
+      .attr('stroke', function (d) { return d3.rgb(fillColor(d.value)).darker(); })
+      .attr('stroke-width', 0.3)
       .on('mouseover', showDetail)
       .on('mouseout', hideDetail);
 
@@ -194,8 +196,39 @@ function bubbleChart() {
    */
   function ticked() {
     bubbles
+      //.each(collide(.5))
       .attr('cx', function (d) { return d.x; })
       .attr('cy', function (d) { return d.y; });
+  }
+
+  // Resolve collisions between nodes.
+  function collide(alpha) {
+    var quadtree = d3.quadtree(nodes);
+    var maxRadius = Math.max(...nodes.map((node) => node.radius));
+    return function(d) {
+      var padding = 0
+      var r = d.radius + maxRadius + padding,
+          nx1 = d.x - r,
+          nx2 = d.x + r,
+          ny1 = d.y - r,
+          ny2 = d.y + r;
+      quadtree.visit(function(quad, x1, y1, x2, y2) {
+        if (quad.point && (quad.point !== d)) {
+          var x = d.x - quad.point.x,
+              y = d.y - quad.point.y,
+              l = Math.sqrt(x * x + y * y),
+              r = d.radius + quad.point.radius + padding;
+          if (l < r) {
+            l = (l - r) / l * alpha;
+            d.x -= x *= l;
+            d.y -= y *= l;
+            quad.point.x += x;
+            quad.point.y += y;
+          }
+        }
+        return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+      });
+    };
   }
 
   /*
@@ -225,7 +258,7 @@ function bubbleChart() {
   function hideDetail(d) {
     // reset outline
     d3.select(this)
-      .attr('stroke', d3.rgb(fillColor(d.group)).darker());
+      .attr('stroke', d3.rgb(fillColor(d.value)).darker());
 
     tooltip.hideTooltip();
   }
@@ -305,6 +338,54 @@ function addCommas(nStr) {
 
 // Load the data.
 d3.csv('data/gates_money.csv', display);
+//
+// fetch google data
+var proxyUrl = "https://rocky-springs-6959.herokuapp.com/";
+var trendsUrl = "https://trends.google.com/trends/api/realtimetrends?hl=en-US&tz=-180&cat=all&fi=0&fs=0&geo=US&ri=300&rs=20&sort=0"
+var widgetsUrl = function(storyId) { return `https://trends.google.com/trends/api/stories/${storyId}?hl=en-US&tz=-180`; }
+var reqUrl = proxyUrl + trendsUrl;
+//https://learn.javascript.ru/fetch
+// handy "get" shortcut with error handling
+const get = async (url) => {
+  const res = await fetch(url) // "GET" is the default method
+  if (!res.ok) {
+    throw new Error(`${res.status}: ${await res.text()}`)
+  }
+  return res
+};
+
+const googleFmt = async (response) => {
+  let txt = await response.text();
+  return JSON.parse(txt.substring(4));
+}
+
+//https://stackoverflow.com/questions/49432579/await-is-only-valid-in-async-function
+// Here we wait for the myfunction to finish
+// and then returns a promise that'll be waited for aswell
+// It's useless to wait the myfunction to finish before to return
+// we can simply returns a promise that will be resolved later
+
+// Also point that we don't use async keyword on the function because
+// we can simply returns the promise returned by myfunction
+async function start() {
+  let resp = await get(reqUrl);
+  let json = await googleFmt(resp);
+  var trendingStoryIds = json.trendingStoryIds;
+  var mLen = Math.min(2, trendingStoryIds.length);
+  for (var i = 0; i < mLen; i++) {
+    var storyId = trendingStoryIds[i];
+    var storyResp = await get(proxyUrl + widgetsUrl(storyId));
+    var storyJson = await googleFmt(storyResp);
+    console.log(storyJson);
+  }
+}
+
+// Call start
+(async() => {
+  // console.log('before start');
+  //await start();
+  // console.log('after start');
+})();
 
 // setup the buttons.
 setupButtons();
