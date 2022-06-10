@@ -182,14 +182,15 @@ function bubbleChart() {
       .text(function(d) {
         return d.word;
       })
-      .attr("font-family", "'Times New Roman', Times, serif")
+      .attr("font-family", "nyt-cheltenham, georgia, 'times new roman', times, serif")
+      .attr("color", "rgb(51, 51, 51)")
 //      .attr("font-size", function(d){
 //        return d.value/100 + 'em';
 //      })
 //      .attr("transform", function(d) {
 //        return "translate(" + d.x + "," + d.y + ")";
 //      })
-      .attr("fill", "black");
+//      .attr("fill", "black");
 
     // @v4 Merge the original empty selection and the enter selection
     bubbles = bubbles.merge(bubblesC);
