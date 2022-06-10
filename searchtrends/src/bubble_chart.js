@@ -100,6 +100,7 @@ function bubbleChart() {
         radius: radiusScale(+d.value),
         value: +d.value,
         text: d.text,
+        word: d.word,
 //        name: d.grant_title,
 //        org: d.organization,
 //        group: d.group,
@@ -154,12 +155,18 @@ function bubbleChart() {
     bubbles = svg.selectAll('.bubble')
       .data(nodes, function (d) { return d.id; });
 
+    captions = svg.selectAll('.caption')
+      .data(nodes, function (d) { return d.id; });
+
+    var bubblesE = bubbles.enter().append("g")
+      .attr("class", "node");
+
     // Create new circle elements each with class `bubble`.
     // There will be one circle.bubble for each object in the nodes array.
     // Initially, their radius (r attribute) will be 0.
     // @v4 Selections are immutable, so lets capture the
     //  enter selection to apply our transtition to below.
-    var bubblesE = bubbles.enter().append('circle')
+    var bubblesC = bubblesE.append('circle')
       .classed('bubble', true)
       .attr('r', 0)
       .attr('fill', function (d) { return fillColor(d.value); })
@@ -168,13 +175,37 @@ function bubbleChart() {
       .on('mouseover', showDetail)
       .on('mouseout', hideDetail);
 
+    var bubblesT = bubblesE.append("text")
+      .classed('caption', true)
+      .attr("dy", ".3em")
+      .style("text-anchor", "middle")
+      .text(function(d) {
+        return d.word;
+      })
+      .attr("font-family", "'Times New Roman', Times, serif")
+//      .attr("font-size", function(d){
+//        return d.value/100 + 'em';
+//      })
+//      .attr("transform", function(d) {
+//        return "translate(" + d.x + "," + d.y + ")";
+//      })
+      .attr("fill", "black");
+
     // @v4 Merge the original empty selection and the enter selection
-    bubbles = bubbles.merge(bubblesE);
+    bubbles = bubbles.merge(bubblesC);
+    captions = captions.merge(bubblesT);
 
     // Fancy transition to make bubbles appear, ending with the
     // correct radius
     bubbles.transition()
       .attr('r', function (d) { return d.radius; });
+
+    captions.transition()
+      .attr("dy", ".3em")
+      .attr("font-size", function(d) {
+        return d.radius / 50 + 'em';
+      })
+      .attr('transform', function (d) { return "translate(" + d.x + "," + d.y + ")"; });
 
     // Set the simulation's nodes to our newly created nodes array.
     // @v4 Once we set the nodes, the simulation will start running automatically!
@@ -391,7 +422,8 @@ function showSlider(trends) {
      return {
       "id": truncateString(t["entityNames"].join(" • "), 30),
       "text": t["entityNames"].join(" • "),
-      "value": t["timeline"][Math.max(0, pos - 1)]["value"]
+      "value": t["timeline"][Math.max(0, pos - 1)]["value"],
+      "word": t["entityNames"][0]
      }
     });
   }
