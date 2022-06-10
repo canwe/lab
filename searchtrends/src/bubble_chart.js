@@ -62,7 +62,7 @@ function bubbleChart() {
   // @v4 scales now have a flattened naming scheme
   // https://stackoverflow.com/questions/54516735/how-to-get-different-shades-of-colors-for-a-single-color
   var fillColor = d3.scaleLinear()
-    .domain([0, 100000000])
+    .domain([0, 100])
     .range(['#d6effc', '#fdd4e9'])
     .interpolate(d3.interpolateRgb.gamma(1.9));
 
@@ -82,7 +82,7 @@ function bubbleChart() {
   function createNodes(rawData) {
     // Use the max total_amount in the data as the max in the scale's domain
     // note we have to ensure the total_amount is a number.
-    var maxAmount = d3.max(rawData, function (d) { return +d.total_amount; });
+    var maxAmount = d3.max(rawData, function (d) { return +d.value; });
 
     // Sizes bubbles based on area.
     // @v4: new flattened scale names.
@@ -97,14 +97,15 @@ function bubbleChart() {
     var transformedNodes = rawData.map(function (d) {
       return {
         id: d.id,
-        radius: radiusScale(+d.total_amount),
-        value: +d.total_amount,
-        name: d.grant_title,
-        org: d.organization,
-        group: d.group,
-        year: d.start_year,
-        x: Math.random() * (940 - radiusScale(+d.total_amount)),
-        y: Math.random() * (600 - radiusScale(+d.total_amount))
+        radius: radiusScale(+d.value),
+        value: +d.value,
+        text: d.text,
+//        name: d.grant_title,
+//        org: d.organization,
+//        group: d.group,
+//        year: d.start_year,
+        x: Math.random() * (940 - radiusScale(+d.value)),
+        y: Math.random() * (600 - radiusScale(+d.value))
       };
     });
 
@@ -239,14 +240,11 @@ function bubbleChart() {
     // change outline to indicate hover state.
     d3.select(this).attr('stroke', 'black');
 
-    var content = '<span class="name">Title: </span><span class="value">' +
-                  d.name +
-                  '</span><br/>' +
-                  '<span class="name">Amount: </span><span class="value">$' +
+    var content = '<span class="name">Search interest: </span><span class="value">' +
                   addCommas(d.value) +
                   '</span><br/>' +
-                  '<span class="name">Year: </span><span class="value">' +
-                  d.year +
+                  '<span class="name"></span><span class="value">' +
+                  d.text +
                   '</span>';
 
     tooltip.showTooltip(content, d3.event);
@@ -270,8 +268,8 @@ function bubbleChart() {
    *
    * displayName is expected to be a string and either 'year' or 'all'.
    */
-  chart.toggleDisplay = function (displayName) {
-    if (displayName === 'update') {
+  chart.toggleDisplay = function (idx) {
+    if (idx === 'update') {
         d3.csv('data/gates_money_updated.csv', display);
     }
   };
@@ -336,13 +334,19 @@ function addCommas(nStr) {
   return x1 + x2;
 }
 
+// https://stackoverflow.com/questions/35910649/how-to-load-a-json-object-instead-of-json-file
 // Load the data.
-d3.csv('data/gates_money.csv', display);
+//d3.csv('data/gates_money.csv', display);
 //
 // fetch google data
 var proxyUrl = "https://rocky-springs-6959.herokuapp.com/";
 var trendsUrl = "https://trends.google.com/trends/api/realtimetrends?hl=en-US&tz=-180&cat=all&fi=0&fs=0&geo=US&ri=300&rs=20&sort=0"
-var widgetsUrl = function(storyId) { return `https://trends.google.com/trends/api/stories/${storyId}?hl=en-US&tz=-180`; }
+var widgetsUrl = function(storyId) { return proxyUrl + `https://trends.google.com/trends/api/stories/${storyId}?hl=en-US&tz=-180`; }
+var timelineUrl = function(wRequest, token) {
+  //{"geo":{"country":"US"},"time":"2022-06-08T05\\:00\\:00+2022-06-09T14\\:00\\:00","resolution":"HOUR","mid":["/m/01jpn4","/m/025_b","/m/07ssc","/g/11b8c3zpmf","/m/06cs1","/m/02m96","/m/04zxvs0"],"locale":"en-US"}
+  var reqEnc = encodeURIComponent(JSON.stringify(wRequest, null, ''));
+  return proxyUrl + `https://trends.google.com/trends/api/widgetdata/timeline?hl=en-US&tz=-180&req=${reqEnc}&token=${token}&tz=-180`
+}
 var reqUrl = proxyUrl + trendsUrl;
 //https://learn.javascript.ru/fetch
 // handy "get" shortcut with error handling
@@ -356,7 +360,83 @@ const get = async (url) => {
 
 const googleFmt = async (response) => {
   let txt = await response.text();
-  return JSON.parse(txt.substring(4));
+  let substIndex = txt.indexOf("{");
+  return JSON.parse(txt.substring(substIndex));
+}
+
+//https://bl.ocks.org/johnwalley/e1d256b81e51da68f7feb632a53c3518
+function showSlider(trends) {
+
+  var minTime = Number.POSITIVE_INFINITY;
+  var maxTime = Number.NEGATIVE_INFINITY;
+  for (let story of trends) {
+    minReduce = story["timeline"].reduce(function(prev, curr) {
+      return parseInt(prev["time"]) < parseInt(curr["time"]) ? prev : curr;
+    })
+    minTime = Math.min(minTime, parseInt(minReduce["time"]));
+
+    maxReduce = story["timeline"].reduce(function(prev, curr) {
+      return parseInt(prev["time"]) > parseInt(curr["time"]) ? prev : curr;
+    })
+    maxTime = Math.max(maxTime, parseInt(maxReduce["time"]));
+  }
+
+  function data(sliderValue) {
+    function truncateString(str, num) {
+      return str.length > num ? str.slice(0, num) + "..." : str;
+    }
+    //https://www.symbolspy.com/dot-symbol.html
+    return trends.map(function(t) {
+     var pos = d3.bisect(t["times"], sliderValue);
+     return {
+      "id": truncateString(t["entityNames"].join(" • "), 30),
+      "text": t["entityNames"].join(" • "),
+      "value": t["timeline"][Math.max(0, pos - 1)]["value"]
+     }
+    });
+  }
+  // Time
+  var dataTime = d3.range(minTime, maxTime, 3600).map(function(d) {
+    return d;
+  });
+
+  var sliderTime = d3
+    .sliderBottom()
+    .min(d3.min(dataTime))
+    .max(d3.max(dataTime))
+    .step(3600)
+    .width(800)
+    // https://d3-wiki.readthedocs.io/zh_CN/master/Time-Formatting/
+    .tickFormat(function(d) { d3.timeFormat('%b %e %I:00 %p')(d * 1000) } )
+    //.tickValues(dataTime)
+    .default(d3.min(dataTime))
+    .on('onchange', val => {
+      d3.select('#value-time').text(d3.timeFormat('%b %e %I:00 %p')(val * 1000));
+      display(null, data(val));
+    });
+
+  var svg = d3
+    .select('div#slider-time')
+    .append('svg')
+    .attr('width', 940)
+    .attr('height', 100);
+
+  var gTime = svg
+    .append('g')
+    .attr('transform', 'translate(20,30)');
+
+  var gText = svg
+    .append('text')
+    .attr('id', 'value-time')
+    .attr('transform', 'translate(840,30)');
+
+  gTime.call(sliderTime);
+
+  d3.select('text#value-time').text(d3.timeFormat('%b %e %I:00 %p')(sliderTime.value() * 1000));
+  // todo update #vis
+  d3.select("#vis img.spinner").remove();
+   display(null, data());
+
 }
 
 //https://stackoverflow.com/questions/49432579/await-is-only-valid-in-async-function
@@ -368,24 +448,60 @@ const googleFmt = async (response) => {
 // Also point that we don't use async keyword on the function because
 // we can simply returns the promise returned by myfunction
 async function start() {
+
   let resp = await get(reqUrl);
   let json = await googleFmt(resp);
+
   var trendingStoryIds = json.trendingStoryIds;
   var mLen = Math.min(2, trendingStoryIds.length);
+
+  var stories = []
   for (var i = 0; i < mLen; i++) {
+
     var storyId = trendingStoryIds[i];
-    var storyResp = await get(proxyUrl + widgetsUrl(storyId));
+    var storyResp = await get(widgetsUrl(storyId));
     var storyJson = await googleFmt(storyResp);
-    console.log(storyJson);
+
+    for (let widget of (storyJson["widgets"] || [])) {
+      if ("TIMESERIES" === widget.id) {
+        var timelineResp = await get(timelineUrl(widget.request, widget.token));
+        var timelineJson = await googleFmt(timelineResp);
+        var timeline = timelineJson["default"]["timelineData"]
+
+        for (let item of timeline) {
+          item["time"] = parseInt(item["time"])
+        }
+        stories.push({
+          "entityNames" : storyJson["entityNames"],
+          "timeline" : timeline
+        })
+        break;
+      }
+    }
   }
+  return stories;
+}
+
+async function mockStart() {
+  var jsondata = await fetch("./data.json")
+  .then(response => {
+     return response.json();
+  });
+  var stories = jsondata["data"];
+  for (let story of stories) {
+    for (let item of story["timeline"]) {
+      item["time"] = parseInt(item["time"])
+    }
+    story["times"] = story["timeline"].map((tl) => tl["time"])
+  }
+  return stories;
 }
 
 // Call start
 (async() => {
-  // console.log('before start');
-  //await start();
-  // console.log('after start');
+  let stories = await mockStart();
+  showSlider(stories);
 })();
 
 // setup the buttons.
-setupButtons();
+//setupButtons();

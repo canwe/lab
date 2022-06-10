@@ -1,0 +1,2500 @@
+{
+  "data": [
+    {
+      "entityNames": [
+        "iOS",
+        "iPod touch",
+        "iPhone"
+      ],
+      "timeline": [
+        {
+          "time": "1654430400",
+          "formattedTime": "Jun 5, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 5 at 3:00 PM",
+          "value": 7,
+          "formattedValue": "7"
+        },
+        {
+          "time": "1654434000",
+          "formattedTime": "Jun 5, 2022 at 4:00 PM",
+          "formattedAxisTime": "Jun 5 at 4:00 PM",
+          "value": 6,
+          "formattedValue": "6"
+        },
+        {
+          "time": "1654437600",
+          "formattedTime": "Jun 5, 2022 at 5:00 PM",
+          "formattedAxisTime": "Jun 5 at 5:00 PM",
+          "value": 6,
+          "formattedValue": "6"
+        },
+        {
+          "time": "1654441200",
+          "formattedTime": "Jun 5, 2022 at 6:00 PM",
+          "formattedAxisTime": "Jun 5 at 6:00 PM",
+          "value": 6,
+          "formattedValue": "6"
+        },
+        {
+          "time": "1654444800",
+          "formattedTime": "Jun 5, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 5 at 7:00 PM",
+          "value": 6,
+          "formattedValue": "6"
+        },
+        {
+          "time": "1654448400",
+          "formattedTime": "Jun 5, 2022 at 8:00 PM",
+          "formattedAxisTime": "Jun 5 at 8:00 PM",
+          "value": 6,
+          "formattedValue": "6"
+        },
+        {
+          "time": "1654452000",
+          "formattedTime": "Jun 5, 2022 at 9:00 PM",
+          "formattedAxisTime": "Jun 5 at 9:00 PM",
+          "value": 7,
+          "formattedValue": "7"
+        },
+        {
+          "time": "1654455600",
+          "formattedTime": "Jun 5, 2022 at 10:00 PM",
+          "formattedAxisTime": "Jun 5 at 10:00 PM",
+          "value": 7,
+          "formattedValue": "7"
+        },
+        {
+          "time": "1654459200",
+          "formattedTime": "Jun 5, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 5 at 11:00 PM",
+          "value": 7,
+          "formattedValue": "7"
+        },
+        {
+          "time": "1654462800",
+          "formattedTime": "Jun 6, 2022 at 12:00 AM",
+          "formattedAxisTime": "Jun 6 at 12:00 AM",
+          "value": 6,
+          "formattedValue": "6"
+        },
+        {
+          "time": "1654466400",
+          "formattedTime": "Jun 6, 2022 at 1:00 AM",
+          "formattedAxisTime": "Jun 6 at 1:00 AM",
+          "value": 6,
+          "formattedValue": "6"
+        },
+        {
+          "time": "1654470000",
+          "formattedTime": "Jun 6, 2022 at 2:00 AM",
+          "formattedAxisTime": "Jun 6 at 2:00 AM",
+          "value": 7,
+          "formattedValue": "7"
+        },
+        {
+          "time": "1654473600",
+          "formattedTime": "Jun 6, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 6 at 3:00 AM",
+          "value": 6,
+          "formattedValue": "6"
+        },
+        {
+          "time": "1654477200",
+          "formattedTime": "Jun 6, 2022 at 4:00 AM",
+          "formattedAxisTime": "Jun 6 at 4:00 AM",
+          "value": 7,
+          "formattedValue": "7"
+        },
+        {
+          "time": "1654480800",
+          "formattedTime": "Jun 6, 2022 at 5:00 AM",
+          "formattedAxisTime": "Jun 6 at 5:00 AM",
+          "value": 7,
+          "formattedValue": "7"
+        },
+        {
+          "time": "1654484400",
+          "formattedTime": "Jun 6, 2022 at 6:00 AM",
+          "formattedAxisTime": "Jun 6 at 6:00 AM",
+          "value": 8,
+          "formattedValue": "8"
+        },
+        {
+          "time": "1654488000",
+          "formattedTime": "Jun 6, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 6 at 7:00 AM",
+          "value": 9,
+          "formattedValue": "9"
+        },
+        {
+          "time": "1654491600",
+          "formattedTime": "Jun 6, 2022 at 8:00 AM",
+          "formattedAxisTime": "Jun 6 at 8:00 AM",
+          "value": 9,
+          "formattedValue": "9"
+        },
+        {
+          "time": "1654495200",
+          "formattedTime": "Jun 6, 2022 at 9:00 AM",
+          "formattedAxisTime": "Jun 6 at 9:00 AM",
+          "value": 11,
+          "formattedValue": "11"
+        },
+        {
+          "time": "1654498800",
+          "formattedTime": "Jun 6, 2022 at 10:00 AM",
+          "formattedAxisTime": "Jun 6 at 10:00 AM",
+          "value": 11,
+          "formattedValue": "11"
+        },
+        {
+          "time": "1654502400",
+          "formattedTime": "Jun 6, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 6 at 11:00 AM",
+          "value": 9,
+          "formattedValue": "9"
+        },
+        {
+          "time": "1654506000",
+          "formattedTime": "Jun 6, 2022 at 12:00 PM",
+          "formattedAxisTime": "Jun 6 at 12:00 PM",
+          "value": 9,
+          "formattedValue": "9"
+        },
+        {
+          "time": "1654509600",
+          "formattedTime": "Jun 6, 2022 at 1:00 PM",
+          "formattedAxisTime": "Jun 6 at 1:00 PM",
+          "value": 7,
+          "formattedValue": "7"
+        },
+        {
+          "time": "1654513200",
+          "formattedTime": "Jun 6, 2022 at 2:00 PM",
+          "formattedAxisTime": "Jun 6 at 2:00 PM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654516800",
+          "formattedTime": "Jun 6, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 6 at 3:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654520400",
+          "formattedTime": "Jun 6, 2022 at 4:00 PM",
+          "formattedAxisTime": "Jun 6 at 4:00 PM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654524000",
+          "formattedTime": "Jun 6, 2022 at 5:00 PM",
+          "formattedAxisTime": "Jun 6 at 5:00 PM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654527600",
+          "formattedTime": "Jun 6, 2022 at 6:00 PM",
+          "formattedAxisTime": "Jun 6 at 6:00 PM",
+          "value": 6,
+          "formattedValue": "6"
+        },
+        {
+          "time": "1654531200",
+          "formattedTime": "Jun 6, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 6 at 7:00 PM",
+          "value": 6,
+          "formattedValue": "6"
+        },
+        {
+          "time": "1654534800",
+          "formattedTime": "Jun 6, 2022 at 8:00 PM",
+          "formattedAxisTime": "Jun 6 at 8:00 PM",
+          "value": 8,
+          "formattedValue": "8"
+        },
+        {
+          "time": "1654538400",
+          "formattedTime": "Jun 6, 2022 at 9:00 PM",
+          "formattedAxisTime": "Jun 6 at 9:00 PM",
+          "value": 12,
+          "formattedValue": "12"
+        },
+        {
+          "time": "1654542000",
+          "formattedTime": "Jun 6, 2022 at 10:00 PM",
+          "formattedAxisTime": "Jun 6 at 10:00 PM",
+          "value": 14,
+          "formattedValue": "14"
+        },
+        {
+          "time": "1654545600",
+          "formattedTime": "Jun 6, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 6 at 11:00 PM",
+          "value": 14,
+          "formattedValue": "14"
+        },
+        {
+          "time": "1654549200",
+          "formattedTime": "Jun 7, 2022 at 12:00 AM",
+          "formattedAxisTime": "Jun 7 at 12:00 AM",
+          "value": 15,
+          "formattedValue": "15"
+        },
+        {
+          "time": "1654552800",
+          "formattedTime": "Jun 7, 2022 at 1:00 AM",
+          "formattedAxisTime": "Jun 7 at 1:00 AM",
+          "value": 15,
+          "formattedValue": "15"
+        },
+        {
+          "time": "1654556400",
+          "formattedTime": "Jun 7, 2022 at 2:00 AM",
+          "formattedAxisTime": "Jun 7 at 2:00 AM",
+          "value": 17,
+          "formattedValue": "17"
+        },
+        {
+          "time": "1654560000",
+          "formattedTime": "Jun 7, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 7 at 3:00 AM",
+          "value": 17,
+          "formattedValue": "17"
+        },
+        {
+          "time": "1654563600",
+          "formattedTime": "Jun 7, 2022 at 4:00 AM",
+          "formattedAxisTime": "Jun 7 at 4:00 AM",
+          "value": 18,
+          "formattedValue": "18"
+        },
+        {
+          "time": "1654567200",
+          "formattedTime": "Jun 7, 2022 at 5:00 AM",
+          "formattedAxisTime": "Jun 7 at 5:00 AM",
+          "value": 80,
+          "formattedValue": "80"
+        },
+        {
+          "time": "1654570800",
+          "formattedTime": "Jun 7, 2022 at 6:00 AM",
+          "formattedAxisTime": "Jun 7 at 6:00 AM",
+          "value": 86,
+          "formattedValue": "86"
+        },
+        {
+          "time": "1654574400",
+          "formattedTime": "Jun 7, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 7 at 7:00 AM",
+          "value": 100,
+          "formattedValue": "100"
+        },
+        {
+          "time": "1654578000",
+          "formattedTime": "Jun 7, 2022 at 8:00 AM",
+          "formattedAxisTime": "Jun 7 at 8:00 AM",
+          "value": 93,
+          "formattedValue": "93",
+          "isPartial": true
+        }
+      ]
+    },
+    {
+      "entityNames": [
+        "Edmonton Oilers",
+        "National Hockey League",
+        "Colorado Avalanche",
+        "Connor McDavid",
+        "Daily fantasy sports",
+        "Ice hockey",
+        "Cale Makar",
+        "Valeri Nichushkin",
+        "Leon Draisaitl"
+      ],
+      "timeline":  [
+        {
+          "time": "1654448400",
+          "formattedTime": "Jun 5, 2022 at 8:00 PM",
+          "formattedAxisTime": "Jun 5 at 8:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654452000",
+          "formattedTime": "Jun 5, 2022 at 9:00 PM",
+          "formattedAxisTime": "Jun 5 at 9:00 PM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654455600",
+          "formattedTime": "Jun 5, 2022 at 10:00 PM",
+          "formattedAxisTime": "Jun 5 at 10:00 PM",
+          "value": 6,
+          "formattedValue": "6"
+        },
+        {
+          "time": "1654459200",
+          "formattedTime": "Jun 5, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 5 at 11:00 PM",
+          "value": 7,
+          "formattedValue": "7"
+        },
+        {
+          "time": "1654462800",
+          "formattedTime": "Jun 6, 2022 at 12:00 AM",
+          "formattedAxisTime": "Jun 6 at 12:00 AM",
+          "value": 8,
+          "formattedValue": "8"
+        },
+        {
+          "time": "1654466400",
+          "formattedTime": "Jun 6, 2022 at 1:00 AM",
+          "formattedAxisTime": "Jun 6 at 1:00 AM",
+          "value": 6,
+          "formattedValue": "6"
+        },
+        {
+          "time": "1654470000",
+          "formattedTime": "Jun 6, 2022 at 2:00 AM",
+          "formattedAxisTime": "Jun 6 at 2:00 AM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654473600",
+          "formattedTime": "Jun 6, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 6 at 3:00 AM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654477200",
+          "formattedTime": "Jun 6, 2022 at 4:00 AM",
+          "formattedAxisTime": "Jun 6 at 4:00 AM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654480800",
+          "formattedTime": "Jun 6, 2022 at 5:00 AM",
+          "formattedAxisTime": "Jun 6 at 5:00 AM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654484400",
+          "formattedTime": "Jun 6, 2022 at 6:00 AM",
+          "formattedAxisTime": "Jun 6 at 6:00 AM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654488000",
+          "formattedTime": "Jun 6, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 6 at 7:00 AM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654491600",
+          "formattedTime": "Jun 6, 2022 at 8:00 AM",
+          "formattedAxisTime": "Jun 6 at 8:00 AM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654495200",
+          "formattedTime": "Jun 6, 2022 at 9:00 AM",
+          "formattedAxisTime": "Jun 6 at 9:00 AM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654498800",
+          "formattedTime": "Jun 6, 2022 at 10:00 AM",
+          "formattedAxisTime": "Jun 6 at 10:00 AM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654502400",
+          "formattedTime": "Jun 6, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 6 at 11:00 AM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654506000",
+          "formattedTime": "Jun 6, 2022 at 12:00 PM",
+          "formattedAxisTime": "Jun 6 at 12:00 PM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654509600",
+          "formattedTime": "Jun 6, 2022 at 1:00 PM",
+          "formattedAxisTime": "Jun 6 at 1:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654513200",
+          "formattedTime": "Jun 6, 2022 at 2:00 PM",
+          "formattedAxisTime": "Jun 6 at 2:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654516800",
+          "formattedTime": "Jun 6, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 6 at 3:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654520400",
+          "formattedTime": "Jun 6, 2022 at 4:00 PM",
+          "formattedAxisTime": "Jun 6 at 4:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654524000",
+          "formattedTime": "Jun 6, 2022 at 5:00 PM",
+          "formattedAxisTime": "Jun 6 at 5:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654527600",
+          "formattedTime": "Jun 6, 2022 at 6:00 PM",
+          "formattedAxisTime": "Jun 6 at 6:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654531200",
+          "formattedTime": "Jun 6, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 6 at 7:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654534800",
+          "formattedTime": "Jun 6, 2022 at 8:00 PM",
+          "formattedAxisTime": "Jun 6 at 8:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654538400",
+          "formattedTime": "Jun 6, 2022 at 9:00 PM",
+          "formattedAxisTime": "Jun 6 at 9:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654542000",
+          "formattedTime": "Jun 6, 2022 at 10:00 PM",
+          "formattedAxisTime": "Jun 6 at 10:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654545600",
+          "formattedTime": "Jun 6, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 6 at 11:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654549200",
+          "formattedTime": "Jun 7, 2022 at 12:00 AM",
+          "formattedAxisTime": "Jun 7 at 12:00 AM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654552800",
+          "formattedTime": "Jun 7, 2022 at 1:00 AM",
+          "formattedAxisTime": "Jun 7 at 1:00 AM",
+          "value": 9,
+          "formattedValue": "9"
+        },
+        {
+          "time": "1654556400",
+          "formattedTime": "Jun 7, 2022 at 2:00 AM",
+          "formattedAxisTime": "Jun 7 at 2:00 AM",
+          "value": 19,
+          "formattedValue": "19"
+        },
+        {
+          "time": "1654560000",
+          "formattedTime": "Jun 7, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 7 at 3:00 AM",
+          "value": 42,
+          "formattedValue": "42"
+        },
+        {
+          "time": "1654563600",
+          "formattedTime": "Jun 7, 2022 at 4:00 AM",
+          "formattedAxisTime": "Jun 7 at 4:00 AM",
+          "value": 41,
+          "formattedValue": "41"
+        },
+        {
+          "time": "1654567200",
+          "formattedTime": "Jun 7, 2022 at 5:00 AM",
+          "formattedAxisTime": "Jun 7 at 5:00 AM",
+          "value": 60,
+          "formattedValue": "60"
+        },
+        {
+          "time": "1654570800",
+          "formattedTime": "Jun 7, 2022 at 6:00 AM",
+          "formattedAxisTime": "Jun 7 at 6:00 AM",
+          "value": 100,
+          "formattedValue": "100"
+        },
+        {
+          "time": "1654574400",
+          "formattedTime": "Jun 7, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 7 at 7:00 AM",
+          "value": 27,
+          "formattedValue": "27"
+        },
+        {
+          "time": "1654578000",
+          "formattedTime": "Jun 7, 2022 at 8:00 AM",
+          "formattedAxisTime": "Jun 7 at 8:00 AM",
+          "value": 13,
+          "formattedValue": "13"
+        }
+      ]
+    },
+    {
+      "entityNames": [
+        "Nonito Donaire",
+        "Naoya Inoue",
+        "World Boxing Association"
+      ],
+      "timeline": [
+        {
+          "time": "1653984000",
+          "formattedTime": "May 31, 2022 at 11:00 AM",
+          "formattedAxisTime": "May 31 at 11:00 AM",
+          "value": 1,
+          "formattedValue": "1"
+        },
+        {
+          "time": "1653998400",
+          "formattedTime": "May 31, 2022 at 3:00 PM",
+          "formattedAxisTime": "May 31 at 3:00 PM",
+          "value": 1,
+          "formattedValue": "1"
+        },
+        {
+          "time": "1654012800",
+          "formattedTime": "May 31, 2022 at 7:00 PM",
+          "formattedAxisTime": "May 31 at 7:00 PM",
+          "value": 1,
+          "formattedValue": "1"
+        },
+        {
+          "time": "1654027200",
+          "formattedTime": "May 31, 2022 at 11:00 PM",
+          "formattedAxisTime": "May 31 at 11:00 PM",
+          "value": 1,
+          "formattedValue": "1"
+        },
+        {
+          "time": "1654041600",
+          "formattedTime": "Jun 1, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 1 at 3:00 AM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654056000",
+          "formattedTime": "Jun 1, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 1 at 7:00 AM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654070400",
+          "formattedTime": "Jun 1, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 1 at 11:00 AM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654084800",
+          "formattedTime": "Jun 1, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 1 at 3:00 PM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654099200",
+          "formattedTime": "Jun 1, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 1 at 7:00 PM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654113600",
+          "formattedTime": "Jun 1, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 1 at 11:00 PM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654128000",
+          "formattedTime": "Jun 2, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 2 at 3:00 AM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654142400",
+          "formattedTime": "Jun 2, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 2 at 7:00 AM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654156800",
+          "formattedTime": "Jun 2, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 2 at 11:00 AM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654171200",
+          "formattedTime": "Jun 2, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 2 at 3:00 PM",
+          "value": 1,
+          "formattedValue": "1"
+        },
+        {
+          "time": "1654185600",
+          "formattedTime": "Jun 2, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 2 at 7:00 PM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654200000",
+          "formattedTime": "Jun 2, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 2 at 11:00 PM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654214400",
+          "formattedTime": "Jun 3, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 3 at 3:00 AM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654228800",
+          "formattedTime": "Jun 3, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 3 at 7:00 AM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654243200",
+          "formattedTime": "Jun 3, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 3 at 11:00 AM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654257600",
+          "formattedTime": "Jun 3, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 3 at 3:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654272000",
+          "formattedTime": "Jun 3, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 3 at 7:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654286400",
+          "formattedTime": "Jun 3, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 3 at 11:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654300800",
+          "formattedTime": "Jun 4, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 4 at 3:00 AM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654315200",
+          "formattedTime": "Jun 4, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 4 at 7:00 AM",
+          "value": 8,
+          "formattedValue": "8"
+        },
+        {
+          "time": "1654329600",
+          "formattedTime": "Jun 4, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 4 at 11:00 AM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654344000",
+          "formattedTime": "Jun 4, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 4 at 3:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654358400",
+          "formattedTime": "Jun 4, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 4 at 7:00 PM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654372800",
+          "formattedTime": "Jun 4, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 4 at 11:00 PM",
+          "value": 6,
+          "formattedValue": "6"
+        },
+        {
+          "time": "1654387200",
+          "formattedTime": "Jun 5, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 5 at 3:00 AM",
+          "value": 13,
+          "formattedValue": "13"
+        },
+        {
+          "time": "1654401600",
+          "formattedTime": "Jun 5, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 5 at 7:00 AM",
+          "value": 24,
+          "formattedValue": "24"
+        },
+        {
+          "time": "1654416000",
+          "formattedTime": "Jun 5, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 5 at 11:00 AM",
+          "value": 11,
+          "formattedValue": "11"
+        },
+        {
+          "time": "1654430400",
+          "formattedTime": "Jun 5, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 5 at 3:00 PM",
+          "value": 6,
+          "formattedValue": "6"
+        },
+        {
+          "time": "1654444800",
+          "formattedTime": "Jun 5, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 5 at 7:00 PM",
+          "value": 7,
+          "formattedValue": "7"
+        },
+        {
+          "time": "1654459200",
+          "formattedTime": "Jun 5, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 5 at 11:00 PM",
+          "value": 7,
+          "formattedValue": "7"
+        },
+        {
+          "time": "1654473600",
+          "formattedTime": "Jun 6, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 6 at 3:00 AM",
+          "value": 7,
+          "formattedValue": "7"
+        },
+        {
+          "time": "1654488000",
+          "formattedTime": "Jun 6, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 6 at 7:00 AM",
+          "value": 18,
+          "formattedValue": "18"
+        },
+        {
+          "time": "1654502400",
+          "formattedTime": "Jun 6, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 6 at 11:00 AM",
+          "value": 20,
+          "formattedValue": "20"
+        },
+        {
+          "time": "1654516800",
+          "formattedTime": "Jun 6, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 6 at 3:00 PM",
+          "value": 17,
+          "formattedValue": "17"
+        },
+        {
+          "time": "1654531200",
+          "formattedTime": "Jun 6, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 6 at 7:00 PM",
+          "value": 18,
+          "formattedValue": "18"
+        },
+        {
+          "time": "1654545600",
+          "formattedTime": "Jun 6, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 6 at 11:00 PM",
+          "value": 23,
+          "formattedValue": "23"
+        },
+        {
+          "time": "1654560000",
+          "formattedTime": "Jun 7, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 7 at 3:00 AM",
+          "value": 48,
+          "formattedValue": "48"
+        },
+        {
+          "time": "1654574400",
+          "formattedTime": "Jun 7, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 7 at 7:00 AM",
+          "value": 100,
+          "formattedValue": "100",
+          "isPartial": true
+        }
+      ]
+    },
+    {
+      "entityNames": [
+        "Abortion",
+        "Roe v. Wade",
+        "Supreme Court of the United States"
+      ],
+      "timeline": [
+        {
+          "time": "1653984000",
+          "formattedTime": "May 31, 2022 at 11:00 AM",
+          "formattedAxisTime": "May 31 at 11:00 AM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1653998400",
+          "formattedTime": "May 31, 2022 at 3:00 PM",
+          "formattedAxisTime": "May 31 at 3:00 PM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654012800",
+          "formattedTime": "May 31, 2022 at 7:00 PM",
+          "formattedAxisTime": "May 31 at 7:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654027200",
+          "formattedTime": "May 31, 2022 at 11:00 PM",
+          "formattedAxisTime": "May 31 at 11:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654041600",
+          "formattedTime": "Jun 1, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 1 at 3:00 AM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654056000",
+          "formattedTime": "Jun 1, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 1 at 7:00 AM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654070400",
+          "formattedTime": "Jun 1, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 1 at 11:00 AM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654084800",
+          "formattedTime": "Jun 1, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 1 at 3:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654099200",
+          "formattedTime": "Jun 1, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 1 at 7:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654113600",
+          "formattedTime": "Jun 1, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 1 at 11:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654128000",
+          "formattedTime": "Jun 2, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 2 at 3:00 AM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654142400",
+          "formattedTime": "Jun 2, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 2 at 7:00 AM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654156800",
+          "formattedTime": "Jun 2, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 2 at 11:00 AM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654171200",
+          "formattedTime": "Jun 2, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 2 at 3:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654185600",
+          "formattedTime": "Jun 2, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 2 at 7:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654200000",
+          "formattedTime": "Jun 2, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 2 at 11:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654214400",
+          "formattedTime": "Jun 3, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 3 at 3:00 AM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654228800",
+          "formattedTime": "Jun 3, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 3 at 7:00 AM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654243200",
+          "formattedTime": "Jun 3, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 3 at 11:00 AM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654257600",
+          "formattedTime": "Jun 3, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 3 at 3:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654272000",
+          "formattedTime": "Jun 3, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 3 at 7:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654286400",
+          "formattedTime": "Jun 3, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 3 at 11:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654300800",
+          "formattedTime": "Jun 4, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 4 at 3:00 AM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654315200",
+          "formattedTime": "Jun 4, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 4 at 7:00 AM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654329600",
+          "formattedTime": "Jun 4, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 4 at 11:00 AM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654344000",
+          "formattedTime": "Jun 4, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 4 at 3:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654358400",
+          "formattedTime": "Jun 4, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 4 at 7:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654372800",
+          "formattedTime": "Jun 4, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 4 at 11:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654387200",
+          "formattedTime": "Jun 5, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 5 at 3:00 AM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654401600",
+          "formattedTime": "Jun 5, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 5 at 7:00 AM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654416000",
+          "formattedTime": "Jun 5, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 5 at 11:00 AM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654430400",
+          "formattedTime": "Jun 5, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 5 at 3:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654444800",
+          "formattedTime": "Jun 5, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 5 at 7:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654459200",
+          "formattedTime": "Jun 5, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 5 at 11:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654473600",
+          "formattedTime": "Jun 6, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 6 at 3:00 AM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654488000",
+          "formattedTime": "Jun 6, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 6 at 7:00 AM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654502400",
+          "formattedTime": "Jun 6, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 6 at 11:00 AM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654516800",
+          "formattedTime": "Jun 6, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 6 at 3:00 PM",
+          "value": 7,
+          "formattedValue": "7"
+        },
+        {
+          "time": "1654531200",
+          "formattedTime": "Jun 6, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 6 at 7:00 PM",
+          "value": 76,
+          "formattedValue": "76"
+        },
+        {
+          "time": "1654545600",
+          "formattedTime": "Jun 6, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 6 at 11:00 PM",
+          "value": 100,
+          "formattedValue": "100"
+        },
+        {
+          "time": "1654560000",
+          "formattedTime": "Jun 7, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 7 at 3:00 AM",
+          "value": 70,
+          "formattedValue": "70"
+        },
+        {
+          "time": "1654574400",
+          "formattedTime": "Jun 7, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 7 at 7:00 AM",
+          "value": 75,
+          "formattedValue": "75",
+          "isPartial": true
+        }
+      ]
+    },
+    {
+      "entityNames": [
+        "Flood",
+        "Mudflow",
+        "Okanogan County",
+        "Flash flood"
+      ],
+      "timeline": [
+        {
+          "time": "1654459200",
+          "formattedTime": "Jun 5, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 5 at 11:00 PM",
+          "value": 25,
+          "formattedValue": "25"
+        },
+        {
+          "time": "1654462800",
+          "formattedTime": "Jun 6, 2022 at 12:00 AM",
+          "formattedAxisTime": "Jun 6 at 12:00 AM",
+          "value": 9,
+          "formattedValue": "9"
+        },
+        {
+          "time": "1654466400",
+          "formattedTime": "Jun 6, 2022 at 1:00 AM",
+          "formattedAxisTime": "Jun 6 at 1:00 AM",
+          "value": 100,
+          "formattedValue": "100"
+        },
+        {
+          "time": "1654470000",
+          "formattedTime": "Jun 6, 2022 at 2:00 AM",
+          "formattedAxisTime": "Jun 6 at 2:00 AM",
+          "value": 22,
+          "formattedValue": "22"
+        },
+        {
+          "time": "1654473600",
+          "formattedTime": "Jun 6, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 6 at 3:00 AM",
+          "value": 12,
+          "formattedValue": "12"
+        },
+        {
+          "time": "1654477200",
+          "formattedTime": "Jun 6, 2022 at 4:00 AM",
+          "formattedAxisTime": "Jun 6 at 4:00 AM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654480800",
+          "formattedTime": "Jun 6, 2022 at 5:00 AM",
+          "formattedAxisTime": "Jun 6 at 5:00 AM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654484400",
+          "formattedTime": "Jun 6, 2022 at 6:00 AM",
+          "formattedAxisTime": "Jun 6 at 6:00 AM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654488000",
+          "formattedTime": "Jun 6, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 6 at 7:00 AM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654491600",
+          "formattedTime": "Jun 6, 2022 at 8:00 AM",
+          "formattedAxisTime": "Jun 6 at 8:00 AM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654495200",
+          "formattedTime": "Jun 6, 2022 at 9:00 AM",
+          "formattedAxisTime": "Jun 6 at 9:00 AM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654498800",
+          "formattedTime": "Jun 6, 2022 at 10:00 AM",
+          "formattedAxisTime": "Jun 6 at 10:00 AM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654502400",
+          "formattedTime": "Jun 6, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 6 at 11:00 AM",
+          "value": 1,
+          "formattedValue": "1"
+        },
+        {
+          "time": "1654506000",
+          "formattedTime": "Jun 6, 2022 at 12:00 PM",
+          "formattedAxisTime": "Jun 6 at 12:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654509600",
+          "formattedTime": "Jun 6, 2022 at 1:00 PM",
+          "formattedAxisTime": "Jun 6 at 1:00 PM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654513200",
+          "formattedTime": "Jun 6, 2022 at 2:00 PM",
+          "formattedAxisTime": "Jun 6 at 2:00 PM",
+          "value": 1,
+          "formattedValue": "1"
+        },
+        {
+          "time": "1654516800",
+          "formattedTime": "Jun 6, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 6 at 3:00 PM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654520400",
+          "formattedTime": "Jun 6, 2022 at 4:00 PM",
+          "formattedAxisTime": "Jun 6 at 4:00 PM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654524000",
+          "formattedTime": "Jun 6, 2022 at 5:00 PM",
+          "formattedAxisTime": "Jun 6 at 5:00 PM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654527600",
+          "formattedTime": "Jun 6, 2022 at 6:00 PM",
+          "formattedAxisTime": "Jun 6 at 6:00 PM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654531200",
+          "formattedTime": "Jun 6, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 6 at 7:00 PM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654534800",
+          "formattedTime": "Jun 6, 2022 at 8:00 PM",
+          "formattedAxisTime": "Jun 6 at 8:00 PM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654538400",
+          "formattedTime": "Jun 6, 2022 at 9:00 PM",
+          "formattedAxisTime": "Jun 6 at 9:00 PM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654542000",
+          "formattedTime": "Jun 6, 2022 at 10:00 PM",
+          "formattedAxisTime": "Jun 6 at 10:00 PM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654545600",
+          "formattedTime": "Jun 6, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 6 at 11:00 PM",
+          "value": 1,
+          "formattedValue": "1"
+        },
+        {
+          "time": "1654549200",
+          "formattedTime": "Jun 7, 2022 at 12:00 AM",
+          "formattedAxisTime": "Jun 7 at 12:00 AM",
+          "value": 12,
+          "formattedValue": "12"
+        },
+        {
+          "time": "1654552800",
+          "formattedTime": "Jun 7, 2022 at 1:00 AM",
+          "formattedAxisTime": "Jun 7 at 1:00 AM",
+          "value": 6,
+          "formattedValue": "6"
+        },
+        {
+          "time": "1654556400",
+          "formattedTime": "Jun 7, 2022 at 2:00 AM",
+          "formattedAxisTime": "Jun 7 at 2:00 AM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654560000",
+          "formattedTime": "Jun 7, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 7 at 3:00 AM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654563600",
+          "formattedTime": "Jun 7, 2022 at 4:00 AM",
+          "formattedAxisTime": "Jun 7 at 4:00 AM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654567200",
+          "formattedTime": "Jun 7, 2022 at 5:00 AM",
+          "formattedAxisTime": "Jun 7 at 5:00 AM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654570800",
+          "formattedTime": "Jun 7, 2022 at 6:00 AM",
+          "formattedAxisTime": "Jun 7 at 6:00 AM",
+          "value": 22,
+          "formattedValue": "22"
+        },
+        {
+          "time": "1654574400",
+          "formattedTime": "Jun 7, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 7 at 7:00 AM",
+          "value": 11,
+          "formattedValue": "11"
+        },
+        {
+          "time": "1654578000",
+          "formattedTime": "Jun 7, 2022 at 8:00 AM",
+          "formattedAxisTime": "Jun 7 at 8:00 AM",
+          "value": 5,
+          "formattedValue": "5"
+        }
+      ]
+    },
+    {
+      "entityNames": [
+        "Berserk",
+        "Kentaro Miura",
+        "Kouji Mori",
+        "Manga",
+        "Hakusensha"
+      ],
+      "timeline": [
+        {
+          "time": "1654488000",
+          "formattedTime": "Jun 6, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 6 at 7:00 AM",
+          "value": 9,
+          "formattedValue": "9"
+        },
+        {
+          "time": "1654491600",
+          "formattedTime": "Jun 6, 2022 at 8:00 AM",
+          "formattedAxisTime": "Jun 6 at 8:00 AM",
+          "value": 11,
+          "formattedValue": "11"
+        },
+        {
+          "time": "1654495200",
+          "formattedTime": "Jun 6, 2022 at 9:00 AM",
+          "formattedAxisTime": "Jun 6 at 9:00 AM",
+          "value": 15,
+          "formattedValue": "15"
+        },
+        {
+          "time": "1654498800",
+          "formattedTime": "Jun 6, 2022 at 10:00 AM",
+          "formattedAxisTime": "Jun 6 at 10:00 AM",
+          "value": 14,
+          "formattedValue": "14"
+        },
+        {
+          "time": "1654502400",
+          "formattedTime": "Jun 6, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 6 at 11:00 AM",
+          "value": 11,
+          "formattedValue": "11"
+        },
+        {
+          "time": "1654506000",
+          "formattedTime": "Jun 6, 2022 at 12:00 PM",
+          "formattedAxisTime": "Jun 6 at 12:00 PM",
+          "value": 9,
+          "formattedValue": "9"
+        },
+        {
+          "time": "1654509600",
+          "formattedTime": "Jun 6, 2022 at 1:00 PM",
+          "formattedAxisTime": "Jun 6 at 1:00 PM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654513200",
+          "formattedTime": "Jun 6, 2022 at 2:00 PM",
+          "formattedAxisTime": "Jun 6 at 2:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654516800",
+          "formattedTime": "Jun 6, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 6 at 3:00 PM",
+          "value": 2,
+          "formattedValue": "2"
+        },
+        {
+          "time": "1654520400",
+          "formattedTime": "Jun 6, 2022 at 4:00 PM",
+          "formattedAxisTime": "Jun 6 at 4:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654524000",
+          "formattedTime": "Jun 6, 2022 at 5:00 PM",
+          "formattedAxisTime": "Jun 6 at 5:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654527600",
+          "formattedTime": "Jun 6, 2022 at 6:00 PM",
+          "formattedAxisTime": "Jun 6 at 6:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654531200",
+          "formattedTime": "Jun 6, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 6 at 7:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654534800",
+          "formattedTime": "Jun 6, 2022 at 8:00 PM",
+          "formattedAxisTime": "Jun 6 at 8:00 PM",
+          "value": 6,
+          "formattedValue": "6"
+        },
+        {
+          "time": "1654538400",
+          "formattedTime": "Jun 6, 2022 at 9:00 PM",
+          "formattedAxisTime": "Jun 6 at 9:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654542000",
+          "formattedTime": "Jun 6, 2022 at 10:00 PM",
+          "formattedAxisTime": "Jun 6 at 10:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654545600",
+          "formattedTime": "Jun 6, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 6 at 11:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654549200",
+          "formattedTime": "Jun 7, 2022 at 12:00 AM",
+          "formattedAxisTime": "Jun 7 at 12:00 AM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654552800",
+          "formattedTime": "Jun 7, 2022 at 1:00 AM",
+          "formattedAxisTime": "Jun 7 at 1:00 AM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654556400",
+          "formattedTime": "Jun 7, 2022 at 2:00 AM",
+          "formattedAxisTime": "Jun 7 at 2:00 AM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654560000",
+          "formattedTime": "Jun 7, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 7 at 3:00 AM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654563600",
+          "formattedTime": "Jun 7, 2022 at 4:00 AM",
+          "formattedAxisTime": "Jun 7 at 4:00 AM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654567200",
+          "formattedTime": "Jun 7, 2022 at 5:00 AM",
+          "formattedAxisTime": "Jun 7 at 5:00 AM",
+          "value": 8,
+          "formattedValue": "8"
+        },
+        {
+          "time": "1654570800",
+          "formattedTime": "Jun 7, 2022 at 6:00 AM",
+          "formattedAxisTime": "Jun 7 at 6:00 AM",
+          "value": 10,
+          "formattedValue": "10"
+        },
+        {
+          "time": "1654574400",
+          "formattedTime": "Jun 7, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 7 at 7:00 AM",
+          "value": 42,
+          "formattedValue": "42"
+        },
+        {
+          "time": "1654578000",
+          "formattedTime": "Jun 7, 2022 at 8:00 AM",
+          "formattedAxisTime": "Jun 7 at 8:00 AM",
+          "value": 100,
+          "formattedValue": "100"
+        }
+      ]
+    },
+    {
+      "entityNames": [
+        "California",
+        "Gavin Newsom",
+        "Primary election"
+      ],
+      "timeline": [
+        {
+          "time": "1654405200",
+          "formattedTime": "Jun 5, 2022 at 8:00 AM",
+          "formattedAxisTime": "Jun 5 at 8:00 AM",
+          "value": 16,
+          "formattedValue": "16"
+        },
+        {
+          "time": "1654408800",
+          "formattedTime": "Jun 5, 2022 at 9:00 AM",
+          "formattedAxisTime": "Jun 5 at 9:00 AM",
+          "value": 12,
+          "formattedValue": "12"
+        },
+        {
+          "time": "1654412400",
+          "formattedTime": "Jun 5, 2022 at 10:00 AM",
+          "formattedAxisTime": "Jun 5 at 10:00 AM",
+          "value": 10,
+          "formattedValue": "10"
+        },
+        {
+          "time": "1654416000",
+          "formattedTime": "Jun 5, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 5 at 11:00 AM",
+          "value": 7,
+          "formattedValue": "7"
+        },
+        {
+          "time": "1654419600",
+          "formattedTime": "Jun 5, 2022 at 12:00 PM",
+          "formattedAxisTime": "Jun 5 at 12:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654423200",
+          "formattedTime": "Jun 5, 2022 at 1:00 PM",
+          "formattedAxisTime": "Jun 5 at 1:00 PM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654426800",
+          "formattedTime": "Jun 5, 2022 at 2:00 PM",
+          "formattedAxisTime": "Jun 5 at 2:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654430400",
+          "formattedTime": "Jun 5, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 5 at 3:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654434000",
+          "formattedTime": "Jun 5, 2022 at 4:00 PM",
+          "formattedAxisTime": "Jun 5 at 4:00 PM",
+          "value": 3,
+          "formattedValue": "3"
+        },
+        {
+          "time": "1654437600",
+          "formattedTime": "Jun 5, 2022 at 5:00 PM",
+          "formattedAxisTime": "Jun 5 at 5:00 PM",
+          "value": 7,
+          "formattedValue": "7"
+        },
+        {
+          "time": "1654441200",
+          "formattedTime": "Jun 5, 2022 at 6:00 PM",
+          "formattedAxisTime": "Jun 5 at 6:00 PM",
+          "value": 11,
+          "formattedValue": "11"
+        },
+        {
+          "time": "1654444800",
+          "formattedTime": "Jun 5, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 5 at 7:00 PM",
+          "value": 13,
+          "formattedValue": "13"
+        },
+        {
+          "time": "1654448400",
+          "formattedTime": "Jun 5, 2022 at 8:00 PM",
+          "formattedAxisTime": "Jun 5 at 8:00 PM",
+          "value": 14,
+          "formattedValue": "14"
+        },
+        {
+          "time": "1654452000",
+          "formattedTime": "Jun 5, 2022 at 9:00 PM",
+          "formattedAxisTime": "Jun 5 at 9:00 PM",
+          "value": 17,
+          "formattedValue": "17"
+        },
+        {
+          "time": "1654455600",
+          "formattedTime": "Jun 5, 2022 at 10:00 PM",
+          "formattedAxisTime": "Jun 5 at 10:00 PM",
+          "value": 16,
+          "formattedValue": "16"
+        },
+        {
+          "time": "1654459200",
+          "formattedTime": "Jun 5, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 5 at 11:00 PM",
+          "value": 16,
+          "formattedValue": "16"
+        },
+        {
+          "time": "1654462800",
+          "formattedTime": "Jun 6, 2022 at 12:00 AM",
+          "formattedAxisTime": "Jun 6 at 12:00 AM",
+          "value": 15,
+          "formattedValue": "15"
+        },
+        {
+          "time": "1654466400",
+          "formattedTime": "Jun 6, 2022 at 1:00 AM",
+          "formattedAxisTime": "Jun 6 at 1:00 AM",
+          "value": 15,
+          "formattedValue": "15"
+        },
+        {
+          "time": "1654470000",
+          "formattedTime": "Jun 6, 2022 at 2:00 AM",
+          "formattedAxisTime": "Jun 6 at 2:00 AM",
+          "value": 16,
+          "formattedValue": "16"
+        },
+        {
+          "time": "1654473600",
+          "formattedTime": "Jun 6, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 6 at 3:00 AM",
+          "value": 15,
+          "formattedValue": "15"
+        },
+        {
+          "time": "1654477200",
+          "formattedTime": "Jun 6, 2022 at 4:00 AM",
+          "formattedAxisTime": "Jun 6 at 4:00 AM",
+          "value": 16,
+          "formattedValue": "16"
+        },
+        {
+          "time": "1654480800",
+          "formattedTime": "Jun 6, 2022 at 5:00 AM",
+          "formattedAxisTime": "Jun 6 at 5:00 AM",
+          "value": 17,
+          "formattedValue": "17"
+        },
+        {
+          "time": "1654484400",
+          "formattedTime": "Jun 6, 2022 at 6:00 AM",
+          "formattedAxisTime": "Jun 6 at 6:00 AM",
+          "value": 23,
+          "formattedValue": "23"
+        },
+        {
+          "time": "1654488000",
+          "formattedTime": "Jun 6, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 6 at 7:00 AM",
+          "value": 29,
+          "formattedValue": "29"
+        },
+        {
+          "time": "1654491600",
+          "formattedTime": "Jun 6, 2022 at 8:00 AM",
+          "formattedAxisTime": "Jun 6 at 8:00 AM",
+          "value": 31,
+          "formattedValue": "31"
+        },
+        {
+          "time": "1654495200",
+          "formattedTime": "Jun 6, 2022 at 9:00 AM",
+          "formattedAxisTime": "Jun 6 at 9:00 AM",
+          "value": 30,
+          "formattedValue": "30"
+        },
+        {
+          "time": "1654498800",
+          "formattedTime": "Jun 6, 2022 at 10:00 AM",
+          "formattedAxisTime": "Jun 6 at 10:00 AM",
+          "value": 21,
+          "formattedValue": "21"
+        },
+        {
+          "time": "1654502400",
+          "formattedTime": "Jun 6, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 6 at 11:00 AM",
+          "value": 16,
+          "formattedValue": "16"
+        },
+        {
+          "time": "1654506000",
+          "formattedTime": "Jun 6, 2022 at 12:00 PM",
+          "formattedAxisTime": "Jun 6 at 12:00 PM",
+          "value": 8,
+          "formattedValue": "8"
+        },
+        {
+          "time": "1654509600",
+          "formattedTime": "Jun 6, 2022 at 1:00 PM",
+          "formattedAxisTime": "Jun 6 at 1:00 PM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654513200",
+          "formattedTime": "Jun 6, 2022 at 2:00 PM",
+          "formattedAxisTime": "Jun 6 at 2:00 PM",
+          "value": 4,
+          "formattedValue": "4"
+        },
+        {
+          "time": "1654516800",
+          "formattedTime": "Jun 6, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 6 at 3:00 PM",
+          "value": 5,
+          "formattedValue": "5"
+        },
+        {
+          "time": "1654520400",
+          "formattedTime": "Jun 6, 2022 at 4:00 PM",
+          "formattedAxisTime": "Jun 6 at 4:00 PM",
+          "value": 10,
+          "formattedValue": "10"
+        },
+        {
+          "time": "1654524000",
+          "formattedTime": "Jun 6, 2022 at 5:00 PM",
+          "formattedAxisTime": "Jun 6 at 5:00 PM",
+          "value": 12,
+          "formattedValue": "12"
+        },
+        {
+          "time": "1654527600",
+          "formattedTime": "Jun 6, 2022 at 6:00 PM",
+          "formattedAxisTime": "Jun 6 at 6:00 PM",
+          "value": 15,
+          "formattedValue": "15"
+        },
+        {
+          "time": "1654531200",
+          "formattedTime": "Jun 6, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 6 at 7:00 PM",
+          "value": 19,
+          "formattedValue": "19"
+        },
+        {
+          "time": "1654534800",
+          "formattedTime": "Jun 6, 2022 at 8:00 PM",
+          "formattedAxisTime": "Jun 6 at 8:00 PM",
+          "value": 21,
+          "formattedValue": "21"
+        },
+        {
+          "time": "1654538400",
+          "formattedTime": "Jun 6, 2022 at 9:00 PM",
+          "formattedAxisTime": "Jun 6 at 9:00 PM",
+          "value": 22,
+          "formattedValue": "22"
+        },
+        {
+          "time": "1654542000",
+          "formattedTime": "Jun 6, 2022 at 10:00 PM",
+          "formattedAxisTime": "Jun 6 at 10:00 PM",
+          "value": 26,
+          "formattedValue": "26"
+        },
+        {
+          "time": "1654545600",
+          "formattedTime": "Jun 6, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 6 at 11:00 PM",
+          "value": 25,
+          "formattedValue": "25"
+        },
+        {
+          "time": "1654549200",
+          "formattedTime": "Jun 7, 2022 at 12:00 AM",
+          "formattedAxisTime": "Jun 7 at 12:00 AM",
+          "value": 28,
+          "formattedValue": "28"
+        },
+        {
+          "time": "1654552800",
+          "formattedTime": "Jun 7, 2022 at 1:00 AM",
+          "formattedAxisTime": "Jun 7 at 1:00 AM",
+          "value": 29,
+          "formattedValue": "29"
+        },
+        {
+          "time": "1654556400",
+          "formattedTime": "Jun 7, 2022 at 2:00 AM",
+          "formattedAxisTime": "Jun 7 at 2:00 AM",
+          "value": 30,
+          "formattedValue": "30"
+        },
+        {
+          "time": "1654560000",
+          "formattedTime": "Jun 7, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 7 at 3:00 AM",
+          "value": 34,
+          "formattedValue": "34"
+        },
+        {
+          "time": "1654563600",
+          "formattedTime": "Jun 7, 2022 at 4:00 AM",
+          "formattedAxisTime": "Jun 7 at 4:00 AM",
+          "value": 41,
+          "formattedValue": "41"
+        },
+        {
+          "time": "1654567200",
+          "formattedTime": "Jun 7, 2022 at 5:00 AM",
+          "formattedAxisTime": "Jun 7 at 5:00 AM",
+          "value": 51,
+          "formattedValue": "51"
+        },
+        {
+          "time": "1654570800",
+          "formattedTime": "Jun 7, 2022 at 6:00 AM",
+          "formattedAxisTime": "Jun 7 at 6:00 AM",
+          "value": 67,
+          "formattedValue": "67"
+        },
+        {
+          "time": "1654574400",
+          "formattedTime": "Jun 7, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 7 at 7:00 AM",
+          "value": 88,
+          "formattedValue": "88"
+        },
+        {
+          "time": "1654578000",
+          "formattedTime": "Jun 7, 2022 at 8:00 AM",
+          "formattedAxisTime": "Jun 7 at 8:00 AM",
+          "value": 100,
+          "formattedValue": "100"
+        }
+      ]
+    },
+    {
+      "entityNames": [
+        "Spotify",
+        "Pie chart"
+      ],
+      "timeline": [
+        {
+          "time": "1654444800",
+          "formattedTime": "Jun 5, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 5 at 7:00 PM",
+          "value": 7,
+          "formattedValue": "7"
+        },
+        {
+          "time": "1654448400",
+          "formattedTime": "Jun 5, 2022 at 8:00 PM",
+          "formattedAxisTime": "Jun 5 at 8:00 PM",
+          "value": 8,
+          "formattedValue": "8"
+        },
+        {
+          "time": "1654452000",
+          "formattedTime": "Jun 5, 2022 at 9:00 PM",
+          "formattedAxisTime": "Jun 5 at 9:00 PM",
+          "value": 9,
+          "formattedValue": "9"
+        },
+        {
+          "time": "1654455600",
+          "formattedTime": "Jun 5, 2022 at 10:00 PM",
+          "formattedAxisTime": "Jun 5 at 10:00 PM",
+          "value": 10,
+          "formattedValue": "10"
+        },
+        {
+          "time": "1654459200",
+          "formattedTime": "Jun 5, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 5 at 11:00 PM",
+          "value": 10,
+          "formattedValue": "10"
+        },
+        {
+          "time": "1654462800",
+          "formattedTime": "Jun 6, 2022 at 12:00 AM",
+          "formattedAxisTime": "Jun 6 at 12:00 AM",
+          "value": 10,
+          "formattedValue": "10"
+        },
+        {
+          "time": "1654466400",
+          "formattedTime": "Jun 6, 2022 at 1:00 AM",
+          "formattedAxisTime": "Jun 6 at 1:00 AM",
+          "value": 11,
+          "formattedValue": "11"
+        },
+        {
+          "time": "1654470000",
+          "formattedTime": "Jun 6, 2022 at 2:00 AM",
+          "formattedAxisTime": "Jun 6 at 2:00 AM",
+          "value": 11,
+          "formattedValue": "11"
+        },
+        {
+          "time": "1654473600",
+          "formattedTime": "Jun 6, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 6 at 3:00 AM",
+          "value": 13,
+          "formattedValue": "13"
+        },
+        {
+          "time": "1654477200",
+          "formattedTime": "Jun 6, 2022 at 4:00 AM",
+          "formattedAxisTime": "Jun 6 at 4:00 AM",
+          "value": 13,
+          "formattedValue": "13"
+        },
+        {
+          "time": "1654480800",
+          "formattedTime": "Jun 6, 2022 at 5:00 AM",
+          "formattedAxisTime": "Jun 6 at 5:00 AM",
+          "value": 15,
+          "formattedValue": "15"
+        },
+        {
+          "time": "1654484400",
+          "formattedTime": "Jun 6, 2022 at 6:00 AM",
+          "formattedAxisTime": "Jun 6 at 6:00 AM",
+          "value": 21,
+          "formattedValue": "21"
+        },
+        {
+          "time": "1654488000",
+          "formattedTime": "Jun 6, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 6 at 7:00 AM",
+          "value": 20,
+          "formattedValue": "20"
+        },
+        {
+          "time": "1654491600",
+          "formattedTime": "Jun 6, 2022 at 8:00 AM",
+          "formattedAxisTime": "Jun 6 at 8:00 AM",
+          "value": 24,
+          "formattedValue": "24"
+        },
+        {
+          "time": "1654495200",
+          "formattedTime": "Jun 6, 2022 at 9:00 AM",
+          "formattedAxisTime": "Jun 6 at 9:00 AM",
+          "value": 24,
+          "formattedValue": "24"
+        },
+        {
+          "time": "1654498800",
+          "formattedTime": "Jun 6, 2022 at 10:00 AM",
+          "formattedAxisTime": "Jun 6 at 10:00 AM",
+          "value": 20,
+          "formattedValue": "20"
+        },
+        {
+          "time": "1654502400",
+          "formattedTime": "Jun 6, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 6 at 11:00 AM",
+          "value": 13,
+          "formattedValue": "13"
+        },
+        {
+          "time": "1654506000",
+          "formattedTime": "Jun 6, 2022 at 12:00 PM",
+          "formattedAxisTime": "Jun 6 at 12:00 PM",
+          "value": 9,
+          "formattedValue": "9"
+        },
+        {
+          "time": "1654509600",
+          "formattedTime": "Jun 6, 2022 at 1:00 PM",
+          "formattedAxisTime": "Jun 6 at 1:00 PM",
+          "value": 15,
+          "formattedValue": "15"
+        },
+        {
+          "time": "1654513200",
+          "formattedTime": "Jun 6, 2022 at 2:00 PM",
+          "formattedAxisTime": "Jun 6 at 2:00 PM",
+          "value": 66,
+          "formattedValue": "66"
+        },
+        {
+          "time": "1654516800",
+          "formattedTime": "Jun 6, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 6 at 3:00 PM",
+          "value": 13,
+          "formattedValue": "13"
+        },
+        {
+          "time": "1654520400",
+          "formattedTime": "Jun 6, 2022 at 4:00 PM",
+          "formattedAxisTime": "Jun 6 at 4:00 PM",
+          "value": 11,
+          "formattedValue": "11"
+        },
+        {
+          "time": "1654524000",
+          "formattedTime": "Jun 6, 2022 at 5:00 PM",
+          "formattedAxisTime": "Jun 6 at 5:00 PM",
+          "value": 10,
+          "formattedValue": "10"
+        },
+        {
+          "time": "1654527600",
+          "formattedTime": "Jun 6, 2022 at 6:00 PM",
+          "formattedAxisTime": "Jun 6 at 6:00 PM",
+          "value": 12,
+          "formattedValue": "12"
+        },
+        {
+          "time": "1654531200",
+          "formattedTime": "Jun 6, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 6 at 7:00 PM",
+          "value": 14,
+          "formattedValue": "14"
+        },
+        {
+          "time": "1654534800",
+          "formattedTime": "Jun 6, 2022 at 8:00 PM",
+          "formattedAxisTime": "Jun 6 at 8:00 PM",
+          "value": 17,
+          "formattedValue": "17"
+        },
+        {
+          "time": "1654538400",
+          "formattedTime": "Jun 6, 2022 at 9:00 PM",
+          "formattedAxisTime": "Jun 6 at 9:00 PM",
+          "value": 20,
+          "formattedValue": "20"
+        },
+        {
+          "time": "1654542000",
+          "formattedTime": "Jun 6, 2022 at 10:00 PM",
+          "formattedAxisTime": "Jun 6 at 10:00 PM",
+          "value": 48,
+          "formattedValue": "48"
+        },
+        {
+          "time": "1654545600",
+          "formattedTime": "Jun 6, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 6 at 11:00 PM",
+          "value": 57,
+          "formattedValue": "57"
+        },
+        {
+          "time": "1654549200",
+          "formattedTime": "Jun 7, 2022 at 12:00 AM",
+          "formattedAxisTime": "Jun 7 at 12:00 AM",
+          "value": 56,
+          "formattedValue": "56"
+        },
+        {
+          "time": "1654552800",
+          "formattedTime": "Jun 7, 2022 at 1:00 AM",
+          "formattedAxisTime": "Jun 7 at 1:00 AM",
+          "value": 63,
+          "formattedValue": "63"
+        },
+        {
+          "time": "1654556400",
+          "formattedTime": "Jun 7, 2022 at 2:00 AM",
+          "formattedAxisTime": "Jun 7 at 2:00 AM",
+          "value": 53,
+          "formattedValue": "53"
+        },
+        {
+          "time": "1654560000",
+          "formattedTime": "Jun 7, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 7 at 3:00 AM",
+          "value": 68,
+          "formattedValue": "68"
+        },
+        {
+          "time": "1654563600",
+          "formattedTime": "Jun 7, 2022 at 4:00 AM",
+          "formattedAxisTime": "Jun 7 at 4:00 AM",
+          "value": 83,
+          "formattedValue": "83"
+        },
+        {
+          "time": "1654567200",
+          "formattedTime": "Jun 7, 2022 at 5:00 AM",
+          "formattedAxisTime": "Jun 7 at 5:00 AM",
+          "value": 66,
+          "formattedValue": "66"
+        },
+        {
+          "time": "1654570800",
+          "formattedTime": "Jun 7, 2022 at 6:00 AM",
+          "formattedAxisTime": "Jun 7 at 6:00 AM",
+          "value": 98,
+          "formattedValue": "98"
+        },
+        {
+          "time": "1654574400",
+          "formattedTime": "Jun 7, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 7 at 7:00 AM",
+          "value": 100,
+          "formattedValue": "100"
+        },
+        {
+          "time": "1654578000",
+          "formattedTime": "Jun 7, 2022 at 8:00 AM",
+          "formattedAxisTime": "Jun 7 at 8:00 AM",
+          "value": 81,
+          "formattedValue": "81"
+        }
+      ]
+    },
+    {
+      "entityNames": [
+        "Nintendo",
+        "Joy-Con",
+        "iOS",
+        "Apple",
+        "Nintendo Switch Pro Controller",
+        "Game controller"
+      ],
+      "timeline": [
+        {
+          "time": "1654462800",
+          "formattedTime": "Jun 6, 2022 at 12:00 AM",
+          "formattedAxisTime": "Jun 6 at 12:00 AM",
+          "value": 19,
+          "formattedValue": "19"
+        },
+        {
+          "time": "1654466400",
+          "formattedTime": "Jun 6, 2022 at 1:00 AM",
+          "formattedAxisTime": "Jun 6 at 1:00 AM",
+          "value": 18,
+          "formattedValue": "18"
+        },
+        {
+          "time": "1654470000",
+          "formattedTime": "Jun 6, 2022 at 2:00 AM",
+          "formattedAxisTime": "Jun 6 at 2:00 AM",
+          "value": 18,
+          "formattedValue": "18"
+        },
+        {
+          "time": "1654473600",
+          "formattedTime": "Jun 6, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 6 at 3:00 AM",
+          "value": 18,
+          "formattedValue": "18"
+        },
+        {
+          "time": "1654477200",
+          "formattedTime": "Jun 6, 2022 at 4:00 AM",
+          "formattedAxisTime": "Jun 6 at 4:00 AM",
+          "value": 19,
+          "formattedValue": "19"
+        },
+        {
+          "time": "1654480800",
+          "formattedTime": "Jun 6, 2022 at 5:00 AM",
+          "formattedAxisTime": "Jun 6 at 5:00 AM",
+          "value": 19,
+          "formattedValue": "19"
+        },
+        {
+          "time": "1654484400",
+          "formattedTime": "Jun 6, 2022 at 6:00 AM",
+          "formattedAxisTime": "Jun 6 at 6:00 AM",
+          "value": 18,
+          "formattedValue": "18"
+        },
+        {
+          "time": "1654488000",
+          "formattedTime": "Jun 6, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 6 at 7:00 AM",
+          "value": 18,
+          "formattedValue": "18"
+        },
+        {
+          "time": "1654491600",
+          "formattedTime": "Jun 6, 2022 at 8:00 AM",
+          "formattedAxisTime": "Jun 6 at 8:00 AM",
+          "value": 21,
+          "formattedValue": "21"
+        },
+        {
+          "time": "1654495200",
+          "formattedTime": "Jun 6, 2022 at 9:00 AM",
+          "formattedAxisTime": "Jun 6 at 9:00 AM",
+          "value": 22,
+          "formattedValue": "22"
+        },
+        {
+          "time": "1654498800",
+          "formattedTime": "Jun 6, 2022 at 10:00 AM",
+          "formattedAxisTime": "Jun 6 at 10:00 AM",
+          "value": 21,
+          "formattedValue": "21"
+        },
+        {
+          "time": "1654502400",
+          "formattedTime": "Jun 6, 2022 at 11:00 AM",
+          "formattedAxisTime": "Jun 6 at 11:00 AM",
+          "value": 19,
+          "formattedValue": "19"
+        },
+        {
+          "time": "1654506000",
+          "formattedTime": "Jun 6, 2022 at 12:00 PM",
+          "formattedAxisTime": "Jun 6 at 12:00 PM",
+          "value": 10,
+          "formattedValue": "10"
+        },
+        {
+          "time": "1654509600",
+          "formattedTime": "Jun 6, 2022 at 1:00 PM",
+          "formattedAxisTime": "Jun 6 at 1:00 PM",
+          "value": 9,
+          "formattedValue": "9"
+        },
+        {
+          "time": "1654513200",
+          "formattedTime": "Jun 6, 2022 at 2:00 PM",
+          "formattedAxisTime": "Jun 6 at 2:00 PM",
+          "value": 9,
+          "formattedValue": "9"
+        },
+        {
+          "time": "1654516800",
+          "formattedTime": "Jun 6, 2022 at 3:00 PM",
+          "formattedAxisTime": "Jun 6 at 3:00 PM",
+          "value": 8,
+          "formattedValue": "8"
+        },
+        {
+          "time": "1654520400",
+          "formattedTime": "Jun 6, 2022 at 4:00 PM",
+          "formattedAxisTime": "Jun 6 at 4:00 PM",
+          "value": 11,
+          "formattedValue": "11"
+        },
+        {
+          "time": "1654524000",
+          "formattedTime": "Jun 6, 2022 at 5:00 PM",
+          "formattedAxisTime": "Jun 6 at 5:00 PM",
+          "value": 11,
+          "formattedValue": "11"
+        },
+        {
+          "time": "1654527600",
+          "formattedTime": "Jun 6, 2022 at 6:00 PM",
+          "formattedAxisTime": "Jun 6 at 6:00 PM",
+          "value": 12,
+          "formattedValue": "12"
+        },
+        {
+          "time": "1654531200",
+          "formattedTime": "Jun 6, 2022 at 7:00 PM",
+          "formattedAxisTime": "Jun 6 at 7:00 PM",
+          "value": 13,
+          "formattedValue": "13"
+        },
+        {
+          "time": "1654534800",
+          "formattedTime": "Jun 6, 2022 at 8:00 PM",
+          "formattedAxisTime": "Jun 6 at 8:00 PM",
+          "value": 31,
+          "formattedValue": "31"
+        },
+        {
+          "time": "1654538400",
+          "formattedTime": "Jun 6, 2022 at 9:00 PM",
+          "formattedAxisTime": "Jun 6 at 9:00 PM",
+          "value": 49,
+          "formattedValue": "49"
+        },
+        {
+          "time": "1654542000",
+          "formattedTime": "Jun 6, 2022 at 10:00 PM",
+          "formattedAxisTime": "Jun 6 at 10:00 PM",
+          "value": 52,
+          "formattedValue": "52"
+        },
+        {
+          "time": "1654545600",
+          "formattedTime": "Jun 6, 2022 at 11:00 PM",
+          "formattedAxisTime": "Jun 6 at 11:00 PM",
+          "value": 47,
+          "formattedValue": "47"
+        },
+        {
+          "time": "1654549200",
+          "formattedTime": "Jun 7, 2022 at 12:00 AM",
+          "formattedAxisTime": "Jun 7 at 12:00 AM",
+          "value": 77,
+          "formattedValue": "77"
+        },
+        {
+          "time": "1654552800",
+          "formattedTime": "Jun 7, 2022 at 1:00 AM",
+          "formattedAxisTime": "Jun 7 at 1:00 AM",
+          "value": 52,
+          "formattedValue": "52"
+        },
+        {
+          "time": "1654556400",
+          "formattedTime": "Jun 7, 2022 at 2:00 AM",
+          "formattedAxisTime": "Jun 7 at 2:00 AM",
+          "value": 54,
+          "formattedValue": "54"
+        },
+        {
+          "time": "1654560000",
+          "formattedTime": "Jun 7, 2022 at 3:00 AM",
+          "formattedAxisTime": "Jun 7 at 3:00 AM",
+          "value": 51,
+          "formattedValue": "51"
+        },
+        {
+          "time": "1654563600",
+          "formattedTime": "Jun 7, 2022 at 4:00 AM",
+          "formattedAxisTime": "Jun 7 at 4:00 AM",
+          "value": 100,
+          "formattedValue": "100"
+        },
+        {
+          "time": "1654567200",
+          "formattedTime": "Jun 7, 2022 at 5:00 AM",
+          "formattedAxisTime": "Jun 7 at 5:00 AM",
+          "value": 70,
+          "formattedValue": "70"
+        },
+        {
+          "time": "1654570800",
+          "formattedTime": "Jun 7, 2022 at 6:00 AM",
+          "formattedAxisTime": "Jun 7 at 6:00 AM",
+          "value": 61,
+          "formattedValue": "61"
+        },
+        {
+          "time": "1654574400",
+          "formattedTime": "Jun 7, 2022 at 7:00 AM",
+          "formattedAxisTime": "Jun 7 at 7:00 AM",
+          "value": 60,
+          "formattedValue": "60"
+        },
+        {
+          "time": "1654578000",
+          "formattedTime": "Jun 7, 2022 at 8:00 AM",
+          "formattedAxisTime": "Jun 7 at 8:00 AM",
+          "value": 76,
+          "formattedValue": "76"
+        }
+      ]
+    }
+  ]
+}

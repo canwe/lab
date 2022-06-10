@@ -13,20 +13,22 @@
 <body>
   <div class="container">
     <h1>Google search trends over recent time</h1>
-    <div id="toolbar">
-      <a href="#" id="update" class="button active">Update</a>
-    </div>
     <div id="vis">
       <svg></svg>
+      <img class="spinner" src="assets/tumbleweed-emptystate-lightbg.gif"/>
     </div>
-
+    <div>
+      <div class="inline"><div id="slider-time"></div></div>
+    </div>
     <div class="footer">
       <p>A demonstration of animated bubble charts in JavaScript and D3.js</p>
       <strong>This version of the code uses D3v4!</strong>
     </div>
   </div>
 
+  <script type="application/json" src="data.json"></script>
   <script src="//d3js.org/d3.v4.min.js"></script>
+  <script src="//unpkg.com/d3-simple-slider"></script>
   <script src="src/tooltip.js"></script>
   <script src="src/bubble_chart.js"></script>
 
