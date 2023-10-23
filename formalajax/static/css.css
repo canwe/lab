@@ -1,0 +1,50 @@
+* {margin:0;padding:0}
+/* mac hide \*/
+html,body{height:100%;width:100%;}
+/* end hide */
+body { 
+	text-align:center;
+	min-height:468px;/* for good browsers*/
+	min-width:552px;/* for good browsers*/
+}
+#xouter{
+	height:100%;
+	width:100%;
+	display:table;
+	vertical-align:middle;
+}
+#xcontainer {
+	text-align: center;
+	position:relative;
+	vertical-align:middle;
+	display:table-cell;
+	height: 600px;
+}	
+#xinner {
+	width: 800px;
+	background:#fff;
+	height: 600px;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+}
+/*
+     FILE ARCHIVED ON 02:32:59 Dec 13, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:29:23 Oct 13, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 238.098
+  exclusion.robots: 0.071
+  exclusion.robots.policy: 0.062
+  cdx.remote: 0.054
+  esindex: 0.01
+  LoadShardBlock: 191.873 (3)
+  PetaboxLoader3.datanode: 219.244 (4)
+  load_resource: 121.96
+  PetaboxLoader3.resolve: 34.641
+*/
