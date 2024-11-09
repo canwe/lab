@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+   <title>Basic Example</title>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+<script type='text/JavaScript' src='js/scw.js'></script>
+<table>
+   <tr>
+      <td><span id="p_calendar"
+                onclick='scwShow(this,event);'>1.01.1951
+      </span></td>
+      <td><a href="#" onclick="scwShow(scwID('p_calendar'),event);return false;">show calendar</a>
+      </td>
+
+   </tr>
+   <tr>
+      <td><input type="text" id="i_calendar" disabled=disabled
+                 onclick='scwShow(this,event,5,1);'
+                 value='27.12.2008'/>
+      </td>
+      <td><a href="#" onclick="scwShow(scwID('i_calendar'),event);return false;">
+         show calendar
+      </a></td>
+   </tr>
+</table>
+</body>
+</html>

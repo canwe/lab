@@ -1,0 +1,29 @@
+<html>
+<head>
+   <title>Calendar Testing</title>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+   <link rel="stylesheet" type="text/css" href="dateselector.css">
+   <script type="text/javascript" src="calendar/popup_lib.js"></script>
+   <script type="text/javascript" charset="UTF-8" src="calendar/dateselector.js"></script>
+   <script type="text/javascript">
+      segodnja = new Date();
+   </script>
+</head>
+<body>
+<form id="calendarForm">
+   <table>
+      <tr class='prop'>
+         <td valign='top'>
+            <input type="text" id='cdate'
+                   name='cdate' size="30"
+                   value=""/>
+
+            <input type="button" name="datepicker" value="*"
+                   onclick="popUpCalendar(this, form.cdate, 'dd.mm.yyyy');"
+                   src="date_selector.gif"/>
+         </td>
+      </tr>
+   </table>
+</form>
+</body>
+</html>
