@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="adx2html_phonelist.xsl" ?>
+<!-- http://adx.elektronengehirn.net -->
+
+<addressbook id="my addressbook.xml">
+<!-- template -->
+<!--
+<contact id="">
+  <forename></forename>
+  <middlename></middlename>
+  <surname></surname>
+  <title></title>
+  <displayname></displayname>
+  <nickname></nickname>
+  <street></street>
+  <postalcode></postalcode>
+  <city></city>
+  <state></state>
+  <country></country>
+  <geo name="" format="latitude;longitude">aa.aaaaaa;bb.bbbbbb</geo>
+  <phone use="home"></phone>
+  <phone use="home" type="mobile"></phone>
+  <phone use="work"></phone>
+  <phone use="work" type="mobile"></phone>
+  <phone use="work" type="fax"></phone>
+  <email use="home"></email>
+  <email use="work"></email>
+  <account type="Skype|LinkedIn|Facebook|Xing|WerKenntWen|brightkite|hi5|quarterlife|viadeo|Flickr|vimeo|YouTube|MySpace|twitter|gowilla|foursquare|identi.ca|soup.io|hellotxt|huffduffer|ebay|ICQ|AIM|YIM|MSNIM|Jabber|Picasa|Google|GoogleCode|Spin.de|last.fm|8tracks|amiestreet|SourceForge|DeviantArt|jappy.de|cliqset|dopplr|delicious|digg|lokalisten.de|my.opera.com|technorati|orkut|friendster|hypem.com|bebo|studiVZ|schuelerVZ|qype"></account>
+  <website display=""></website>
+  <birthday>YYYY-MM-DD</birthday>
+  <nameday>MM-DD</nameday>
+  <photo></photo>
+  <tag></tag>
+  <tag>adx:frequency=high|medium|low</tag>
+  <tag>xfn:rel=friend met ...</tag>
+  <misc type=""></misc>
+  <org idref=""></org>
+  <website type="work"></website>
+  <orgunit></orgunit>
+  <position></position>
+  <comment></comment>
+</contact>
+-->
+
+
+<contact>
+  <forename>Thomas</forename>
+  <surname>Bartensud</surname>
+  <nickname>Tom</nickname>
+  <displayname>ClickMe</displayname>
+  <street>Weinweg 23</street>
+  <postalcode>10242</postalcode>
+  <city>Berlin</city>
+  <country>de</country>
+  <geo name="" format="latitude;longitude">aa.aaaa;bb.bbbb</geo>
+  <phone use="home"></phone>
+  <phone use="home" type="mobile">+49 0199 / 123 456</phone>
+  <email use="home">thomas.bartensud@googlemail.com</email>
+  <!--account type="Facebook">Thomas-Bartensud/1544540268</account-->
+  <account type="Facebook">bartensud</account>
+  <account type="twitter">bartensud</account>
+  <account type="Google">thomas.bartensud</account> 
+  <account type="last.fm">Bartensud</account>
+  <account type="hypem.com">bartensud</account> 
+  <account type="dopplr">bartensud</account> 
+  <account type="vimeo">bartensud</account> 
+  <account type="digg">bartensud</account> 
+  <account type="delicious">bartensud</account> 
+  <account type="sourceforge">bartensud</account> 
+  <account type="identi.ca">bartensud</account>
+  <website display="">http://sourceforge.net/projects/adx</website>
+  <website display="adx hCard Importer">http://adx.elektronengehirn.net/import/hcard2adx.php</website>
+  <birthday>1987-05-23</birthday>
+  <nameday>12-21</nameday>
+  <tag>CustomTag</tag>
+  <tag>adx:frequency=high</tag>
+  <tag>xfn:rel=me</tag>
+  <misc type=""></misc>
+  <comment>
+  Hochschule: TU München (Bayern)
+  </comment>
+</contact>
+
+<contact id="">
+  <forename>Norman</forename>
+  <surname>Fake</surname>
+  <displayname>Norman</displayname>
+  <nickname></nickname>
+  <street>Wilson Road 42</street>
+  <postalcode>12345</postalcode>
+  <city>Powder Gulch</city>
+  <country></country>
+  <birthday>YYYY-MM-DD</birthday>
+  <geo name="" format="latitude;longitude">aa.aaaa;bb.bbbb</geo>
+  <phone use="home">+1 999 / 22 33 22</phone>
+  <phone use="home" type="mobile">+1 175 / 666 789</phone>
+  <phone use="work"></phone>
+  <phone use="work" type="mobile"></phone>
+  <phone type="fax" use="work"></phone>
+  <account type="Skype">fake</account>
+  <account type="linkedin">barackobama</account>
+  <account type="Facebook">BarackObama</account>
+  <account type="Flickr">fake</account>
+  <account type="MySpace">fake</account>
+  <account type="Twitter">fake</account>
+  <account type="ICQ">166689</account>
+  <email use="home">norman@fake.net</email>
+  <email use="work"></email>
+  <website>http://adx.elektronengehirn.net</website>
+  <tag>adx:frequency=high</tag>
+  <tag>xfn:rel=friend</tag>
+  <misc type=""></misc>
+  <comment>
+  </comment>
+</contact>
+
+<contact id="">
+  <forename>Maximilian</forename>
+  <surname>Mustermann</surname>
+  <title></title>
+  <displayname>Max</displayname>
+  <nickname></nickname>
+  <street></street>
+  <postalcode></postalcode>
+  <city></city>
+  <country>Germany</country>
+  <geo name="" format="latitude;longitude">aa.aaaa;bb.bbbb</geo>
+  <phone use="home">0123 / 456789</phone>
+  <phone use="home" type="mobile">0175 / 123 456</phone>
+  <phone use="work">0123 / 666999</phone>
+  <phone use="work" type="mobile">0151 / 666999</phone>
+  <email use="home">max@mustermann.de</email>
+  <email use="work">max.m@office.de</email>
+  <account type="Skype">echo123</account>
+  <account type="LinkedIn">dir/max/musterrmann</account>
+  <account type="Twitter">test</account>
+  <account type="Xing">Max_Mustermann</account>
+  <account type="ICQ">123456</account>
+  <website display="">www.mustermann.net</website>
+  <birthday>1964-08-12</birthday>
+  <nameday></nameday>
+  <tag>Musician</tag>
+  <tag>CustomTag</tag>
+  <tag>adx:frequency=high</tag>
+  <tag>xfn:rel=co-worker met</tag>
+  <misc type=""></misc>
+  <comment>
+  This is test entry in this addressbook.
+  Chage it for your own needs.
+  </comment>
+</contact>
+
+<contact id="">
+  <forename>Jonathan</forename>
+  <surname>Smith</surname>
+  <title></title>
+  <displayname>John</displayname>
+  <nickname></nickname>
+  <street>Main road 23</street>
+  <postalcode>3654</postalcode>
+  <city>Hollywood</city>
+  <country></country>
+  <geo name="" format="latitude;longitude">aa.aaaa;bb.bbbb</geo>
+  <phone use="home">+1 123 / 654321</phone>
+  <phone use="home" type="mobile"></phone>
+  <phone use="work"></phone>
+  <email use="home"></email>
+  <email use="work"></email>
+  <account type="linkedin">34305394</account>
+  <account type="Delicious">JohnSmith</account>
+  <account type="Soup">inspiration</account>
+  <account type="YIM">yimFake</account>
+  <account type="MSNIM">msnimFake</account>
+  <website display=""></website>
+  <birthday>YYYY-MM-DD</birthday>
+  <nameday></nameday>
+  <tag>Musician</tag>
+  <tag>xfn:rel=co-worker met</tag>  
+  <tag>xfn:rel=friend</tag>  
+  <misc type="">Likes B movies</misc>
+  <comment></comment>
+</contact>
+
+<contact id="">
+  <org idref="">Chaos Computer Club e. V.</org>
+  <displayname>CCC</displayname>
+  <street>Lokstedter Weg 72</street>
+  <postalcode>20251</postalcode>
+  <city>Hamburg</city>
+  <country>Germany</country>
+  <phone use="work">+49 700 - 24267366</phone>
+  <phone use="work" type="fax">+49 40 - 401801-40</phone>
+  <email use="work">mail@ccc.de</email>
+  <account type="twitter">chaosupdates</account>
+  <account type="identi.ca">chaosupdates</account>
+  <website display="">http://www.ccc.de/en</website>
+  <tag></tag>
+  <tag>adx:frequency=low</tag>
+  <misc type=""></misc>
+  <comment></comment>
+</contact>
+
+</addressbook>
