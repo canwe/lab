@@ -1,6 +1,6 @@
 /**
  * GitHub ZIP Repository Viewer
- * Complete implementation with dynamic README loading
+ * With browser history and URL routing support
  */
 
 class GitHubZipViewer {
@@ -17,6 +17,9 @@ class GitHubZipViewer {
         this.totalSize = 0;
 
         this.initMarked();
+
+        // Parse initial URL on startup
+        this.parseUrlHash();
 
         // Initialize when DOM is ready
         if (document.readyState === 'loading') {
@@ -45,6 +48,82 @@ class GitHubZipViewer {
         this.bindEvents();
         this.updateUIFromConfig();
         this.loadRepository();
+
+        // Listen for browser back/forward buttons
+        window.addEventListener('popstate', (e) => {
+            this.handleBrowserNavigation(e);
+        });
+    }
+
+    // Parse URL hash to get initial path
+    parseUrlHash() {
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+            try {
+                const state = JSON.parse(decodeURIComponent(hash));
+                if (state.path !== undefined) {
+                    this.currentPath = state.path;
+                }
+                if (state.file !== undefined) {
+                    this.currentFile = state.file;
+                }
+                console.log('Parsed URL hash:', state);
+            } catch (e) {
+                console.log('Could not parse URL hash, using default path');
+            }
+        }
+    }
+
+    // Update URL in browser address bar
+    updateBrowserUrl(path, file = null) {
+        const state = {
+            path: path || '',
+            file: file
+        };
+
+        const hash = encodeURIComponent(JSON.stringify(state));
+        const url = window.location.pathname + '#' + hash;
+
+        // Update URL without reloading page
+        history.pushState(state, '', url);
+
+        // Update page title
+        const titlePath = path ? `/${path}` : '';
+        document.title = `canwe/slackirx${titlePath} - GitHub`;
+
+        console.log('Updated browser URL:', url);
+    }
+
+    // Handle browser back/forward navigation
+    handleBrowserNavigation(event) {
+        console.log('Browser navigation:', event.state);
+
+        if (event.state) {
+            const { path, file } = event.state;
+
+            // Update current path
+            this.currentPath = path || '';
+
+            // Update history tracking
+            this.history = this.history.slice(0, this.historyIndex + 1);
+            this.history.push(this.currentPath);
+            this.historyIndex = this.history.length - 1;
+
+            // Update UI
+            this.updateNavigationButtons();
+            this.updateBreadcrumb(this.currentPath);
+            this.renderFileList(this.currentPath);
+
+            // Load README for current directory
+            if (this.config.showReadme) {
+                this.loadReadmeForCurrentDirectory();
+            }
+
+            // If there was a file in state, open it
+            if (file && file.path) {
+                this.viewFile(file.path, file.name);
+            }
+        }
     }
 
     cacheElements() {
@@ -157,6 +236,29 @@ class GitHubZipViewer {
                 this.elements.codeDropdown.style.display = 'none';
             }
         });
+
+        // Handle Ctrl+Click and Middle-click for opening in new tab
+        document.addEventListener('click', (e) => {
+            // Check if click is on a file or directory link
+            const link = e.target.closest('a[data-path]');
+            if (link && (e.ctrlKey || e.metaKey || e.button === 1)) {
+                e.preventDefault();
+                const path = link.getAttribute('data-path');
+                const type = link.getAttribute('data-type');
+                const name = link.getAttribute('data-name');
+
+                // Open in new tab/window
+                const state = {
+                    path: type === 'directory' ? path : this.getParentPath(path),
+                    file: type === 'file' ? { path, name } : null
+                };
+
+                const hash = encodeURIComponent(JSON.stringify(state));
+                const newUrl = window.location.origin + window.location.pathname + '#' + hash;
+
+                window.open(newUrl, '_blank');
+            }
+        });
     }
 
     updateUIFromConfig() {
@@ -210,7 +312,9 @@ class GitHubZipViewer {
             await this.loadZipFile();
             this.buildFileTree();
             this.updateStats();
-            this.navigateTo(''); // README загрузится внутри navigateTo()
+
+            // Navigate to initial path (from URL or root)
+            this.navigateTo(this.currentPath || '');
 
             this.showLoading(false);
 
@@ -316,11 +420,11 @@ class GitHubZipViewer {
         }
     }
 
-    navigateTo(path) {
+    navigateTo(path, updateHistory = true) {
         path = path || '';
-        console.log('Navigating to:', path);
+        console.log('Navigating to:', path, 'updateHistory:', updateHistory);
 
-        // Update history
+        // Update internal history
         if (this.history[this.historyIndex] !== path) {
             this.history = this.history.slice(0, this.historyIndex + 1);
             this.history.push(path);
@@ -331,6 +435,11 @@ class GitHubZipViewer {
         this.updateNavigationButtons();
         this.updateBreadcrumb(path);
         this.renderFileList(path);
+
+        // Update browser URL
+        if (updateHistory) {
+            this.updateBrowserUrl(path);
+        }
 
         // Load README for current directory
         if (this.config.showReadme) {
@@ -347,6 +456,9 @@ class GitHubZipViewer {
             this.updateBreadcrumb(path);
             this.renderFileList(path);
 
+            // Update browser URL
+            this.updateBrowserUrl(path);
+
             // Load README for current directory
             if (this.config.showReadme) {
                 this.loadReadmeForCurrentDirectory();
@@ -362,6 +474,9 @@ class GitHubZipViewer {
             this.updateNavigationButtons();
             this.updateBreadcrumb(path);
             this.renderFileList(path);
+
+            // Update browser URL
+            this.updateBrowserUrl(path);
 
             // Load README for current directory
             if (this.config.showReadme) {
@@ -397,13 +512,18 @@ class GitHubZipViewer {
 
         this.elements.breadcrumbPath.innerHTML = html;
 
-        // Add click handlers
+        // Add click handlers with URL support
         this.elements.breadcrumbPath.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const targetPath = link.getAttribute('data-path');
                 this.navigateTo(targetPath);
             });
+
+            // Set href for context menu "Copy link address"
+            const state = { path: link.getAttribute('data-path') };
+            const hash = encodeURIComponent(JSON.stringify(state));
+            link.href = '#' + hash;
         });
     }
 
@@ -440,13 +560,16 @@ class GitHubZipViewer {
         // Add parent directory if not at root
         if (path !== '') {
             const parentPath = this.getParentPath(path);
+            const parentState = { path: parentPath };
+            const parentHash = encodeURIComponent(JSON.stringify(parentState));
+
             html += `
                 <div class="Box-row d-flex flex-items-center">
                     <div class="mr-2">
                         📁
                     </div>
                     <div class="flex-auto">
-                        <a href="#" class="d-flex flex-items-center" data-path="${parentPath}" data-type="directory">
+                        <a href="#${parentHash}" data-path="${parentPath}" data-type="directory" class="d-flex flex-items-center">
                             <span class="color-fg-muted">..</span>
                         </a>
                     </div>
@@ -459,16 +582,24 @@ class GitHubZipViewer {
             const icon = item.isDirectory ? '📁' : '📄';
             const size = item.size ? this.config.formatFileSize(item.size) : '';
 
+            // Create URL for this item
+            const itemState = {
+                path: item.isDirectory ? item.path : this.getParentPath(item.path),
+                file: !item.isDirectory ? { path: item.path, name: item.name } : null
+            };
+            const itemHash = encodeURIComponent(JSON.stringify(itemState));
+
             html += `
                 <div class="Box-row d-flex flex-items-center">
                     <div class="mr-2">
                         ${icon}
                     </div>
                     <div class="flex-auto">
-                        <a href="#" class="d-flex flex-items-center"
+                        <a href="#${itemHash}"
                            data-path="${item.isDirectory ? item.path : item.path}"
                            data-type="${item.isDirectory ? 'directory' : 'file'}"
-                           data-name="${item.name}">
+                           data-name="${item.name}"
+                           class="d-flex flex-items-center">
                             <span class="color-fg-default">${item.name}</span>
                         </a>
                     </div>
@@ -750,6 +881,9 @@ class GitHubZipViewer {
                 this.elements.readmeSection.style.display = 'none';
             }
 
+            // Update browser URL for file view
+            this.updateBrowserUrl(this.getParentPath(filePath), { path: filePath, name: fileName });
+
             // Render content
             if (isBinary) {
                 if (['.png', '.jpg', '.jpeg', '.gif', '.svg'].includes(extension)) {
@@ -824,6 +958,9 @@ class GitHubZipViewer {
         if (this.elements.fileViewer) {
             this.elements.fileViewer.style.display = 'none';
         }
+
+        // Update browser URL when returning to explorer
+        this.updateBrowserUrl(this.currentPath);
 
         // Load README for current directory when returning to file explorer
         if (this.config.showReadme) {
