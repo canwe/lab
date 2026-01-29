@@ -166,7 +166,17 @@ class GitHubZipViewer {
             downloadBtn: document.getElementById('downloadBtn'),
             codeDropdownToggle: document.getElementById('codeDropdownToggle'),
             codeDropdown: document.getElementById('codeDropdown'),
-            downloadZipLink: document.getElementById('downloadZipLink')
+            downloadZipLink: document.getElementById('downloadZipLink'),
+
+            // Video showcase
+            showcaseVideoBtn: document.getElementById('showcaseVideoBtn'),
+            videoModal: document.getElementById('videoModal'),
+            showcaseVideoPlayer: document.getElementById('showcaseVideoPlayer'),
+            videoSource: document.getElementById('videoSource'),
+            closeVideoModal: document.getElementById('closeVideoModal'),
+            playVideoBtn: document.getElementById('playVideoBtn'),
+            pauseVideoBtn: document.getElementById('pauseVideoBtn'),
+            downloadVideoBtn: document.getElementById('downloadVideoBtn'),
         };
 
         // Breadcrumb items
@@ -178,6 +188,59 @@ class GitHubZipViewer {
 
     bindEvents() {
         console.log('Binding events...');
+
+        // Video showcase button
+        if (this.elements.showcaseVideoBtn) {
+            this.elements.showcaseVideoBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.openShowcaseVideo();
+            });
+        }
+
+        // Video modal controls
+        if (this.elements.closeVideoModal) {
+            this.elements.closeVideoModal.addEventListener('click', () => {
+                this.closeShowcaseVideo();
+            });
+        }
+
+        if (this.elements.playVideoBtn) {
+            this.elements.playVideoBtn.addEventListener('click', () => {
+                if (this.elements.showcaseVideoPlayer) {
+                    this.elements.showcaseVideoPlayer.play();
+                }
+            });
+        }
+
+        if (this.elements.pauseVideoBtn) {
+            this.elements.pauseVideoBtn.addEventListener('click', () => {
+                if (this.elements.showcaseVideoPlayer) {
+                    this.elements.showcaseVideoPlayer.pause();
+                }
+            });
+        }
+
+        if (this.elements.downloadVideoBtn) {
+            this.elements.downloadVideoBtn.addEventListener('click', () => {
+                this.downloadShowcaseVideo();
+            });
+        }
+
+        // Close modal when clicking outside
+        if (this.elements.videoModal) {
+            this.elements.videoModal.addEventListener('click', (e) => {
+                if (e.target === this.elements.videoModal) {
+                    this.closeShowcaseVideo();
+                }
+            });
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.elements.videoModal.style.display === 'flex') {
+                this.closeShowcaseVideo();
+            }
+        });
 
         // Navigation
         if (this.elements.navBack) {
@@ -968,6 +1031,56 @@ class GitHubZipViewer {
         }
 
         this.currentFile = null;
+    }
+
+    // Open showcase video modal
+    openShowcaseVideo() {
+        if (!this.elements.videoModal || !this.elements.showcaseVideoPlayer) {
+            console.error('Video modal elements not found');
+            return;
+        }
+
+        // URL вашего видео файла (замените на реальный)
+        const videoUrl = './showcase.mov';
+
+        // Set video source
+        this.elements.videoSource.src = videoUrl;
+        this.elements.showcaseVideoPlayer.load();
+
+        // Show modal
+        this.elements.videoModal.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+
+        console.log('Opening showcase video:', videoUrl);
+    }
+
+    // Close showcase video modal
+    closeShowcaseVideo() {
+        if (!this.elements.videoModal || !this.elements.showcaseVideoPlayer) {
+            return;
+        }
+
+        // Pause video
+        this.elements.showcaseVideoPlayer.pause();
+
+        // Hide modal
+        this.elements.videoModal.style.display = 'none';
+        document.body.style.overflow = ''; // Restore scrolling
+
+        // Reset video
+        this.elements.videoSource.src = '';
+        this.elements.showcaseVideoPlayer.load();
+    }
+
+    // Download showcase video
+    downloadShowcaseVideo() {
+        const videoUrl = 'https://your-domain.com/showcase.mov';
+        const a = document.createElement('a');
+        a.href = videoUrl;
+        a.download = 'showcase.mov';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
     }
 
     async viewRawFile() {

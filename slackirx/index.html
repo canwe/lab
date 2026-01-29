@@ -60,6 +60,17 @@
                             </a>
                             <button class="btn btn-primary dropdown-toggle" id="codeDropdownToggle"></button>
                         </div>
+                        <!-- Кнопка видео showcase -->
+                        <div class="BtnGroup">
+                            <!-- Кнопка видео showcase (прямая ссылка) -->
+                            <!-- Кнопка для видео showcase -->
+                            <button class="btn btn-outline" id="showcaseVideoBtn">
+                                <svg class="octicon octicon-device-camera-video mr-2" width="16" height="16">
+                                    <path d="M2 3.75C2 2.784 2.784 2 3.75 2h7.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0 1 11.25 13h-7.5A1.75 1.75 0 0 1 2 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Zm11.098.763a.75.75 0 0 1 .652 1.35l-1.095.527A2.251 2.251 0 0 1 14 7.947v.303a2.25 2.25 0 0 1-1.098 1.936l-1.095.527a.75.75 0 1 1-.652-1.35l1.095-.527a.75.75 0 0 0 .366-.648v-.303a.75.75 0 0 0-.366-.648l-1.095-.527a.75.75 0 1 1 .652-1.35l1.095.527A2.25 2.25 0 0 1 14 6.697v-.303a2.25 2.25 0 0 1 1.098-1.936Z"></path>
+                                </svg>
+                                Watch Showcase
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <p class="repo-description">A Slack <-> IRC relay</p>
@@ -280,6 +291,42 @@
             </svg>
             Download ZIP
         </a>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="video-modal-overlay" id="videoModal" style="display: none;">
+        <div class="video-modal">
+            <div class="video-modal-header">
+                <h3 class="video-modal-title">Showcase Video</h3>
+                <button class="video-modal-close" id="closeVideoModal">&times;</button>
+            </div>
+            <div class="video-modal-body">
+                <video id="showcaseVideoPlayer" controls style="width: 100%; border-radius: 6px;">
+                    <source id="videoSource" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-modal-controls mt-3">
+                    <button class="btn btn-primary mr-2" id="playVideoBtn">
+                        <svg class="octicon octicon-play" width="16" height="16">
+                            <path d="M3 2.713C3 1.612 4.189 1 5.203 1h.401c1.014 0 2.203.612 2.203 1.713v10.574c0 1.1-1.189 1.713-2.203 1.713h-.401C4.189 15 3 14.388 3 13.287Zm6 0C9 1.612 10.189 1 11.203 1h.401c1.014 0 2.203.612 2.203 1.713v10.574c0 1.1-1.189 1.713-2.203 1.713h-.401C10.189 15 9 14.388 9 13.287Z"></path>
+                        </svg>
+                        Play
+                    </button>
+                    <button class="btn btn-outline mr-2" id="pauseVideoBtn">
+                        <svg class="octicon octicon-pause" width="16" height="16">
+                            <path d="M4.75 1a.75.75 0 0 0-.75.75v12.5c0 .414.336.75.75.75h2.5a.75.75 0 0 0 .75-.75V1.75A.75.75 0 0 0 7.25 1Zm5 0a.75.75 0 0 0-.75.75v12.5c0 .414.336.75.75.75h2.5a.75.75 0 0 0 .75-.75V1.75a.75.75 0 0 0-.75-.75Z"></path>
+                        </svg>
+                        Pause
+                    </button>
+                    <button class="btn btn-outline" id="downloadVideoBtn">
+                        <svg class="octicon octicon-download" width="16" height="16">
+                            <path d="M7.47 10.78a.75.75 0 0 1 1.06 0l3.25-3.25a.75.75 0 0 0-1.06-1.06L8.75 8.44V1.75a.75.75 0 0 0-1.5 0v6.69L5.28 6.47a.75.75 0 0 0-1.06 1.06l3.25 3.25ZM3.75 13a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z"></path>
+                        </svg>
+                        Download
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>

@@ -663,3 +663,77 @@ body {
 #debugReadmeBtn .octicon {
     vertical-align: middle;
 }
+
+/* Video Modal Styles */
+.video-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding: 20px;
+}
+
+.video-modal {
+    background: var(--color-canvas-default);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.video-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background-color: var(--color-canvas-subtle);
+    border-bottom: 1px solid var(--color-border-default);
+}
+
+.video-modal-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.video-modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--color-fg-muted);
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.video-modal-close:hover {
+    background-color: var(--color-border-default);
+    color: var(--color-fg-default);
+}
+
+.video-modal-body {
+    padding: 24px;
+}
+
+#showcaseVideoPlayer {
+    background: #000;
+    max-height: 70vh;
+}
+
+.video-modal-controls {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
