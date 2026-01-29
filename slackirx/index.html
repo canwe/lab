@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-color-mode="light" data-light-theme="light" data-dark-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>canwe/slackirx - GitHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+</head>
+<body class="logged-out env-production page-responsive">
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner-container">
+            <div class="spinner"></div>
+            <div class="loading-text">Initializing GitHub-like repository viewer...</div>
+        </div>
+    </div>
+
+    <!-- GitHub Header -->
+    <div class="Header">
+        <div class="Header-content">
+            <div class="Header-item">
+                <a href="#" class="Header-link">
+                    <svg height="32" viewBox="0 0 16 16" version="1.1" width="32" class="octicon octicon-mark-github">
+                        <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-xl">
+        <!-- Repository Header -->
+        <div class="repository-header">
+            <div class="repository-title-section">
+                <div class="d-flex flex-items-center">
+                    <div class="mr-3">
+                        <div class="avatar-placeholder">
+                            <div class="avatar-initials">C</div>
+                        </div>
+                    </div>
+                    <div class="flex-auto">
+                        <h1 class="repo-title">
+                            <span class="repo-owner">canwe</span>
+                            <span class="repo-divider">/</span>
+                            <span class="repo-name">slackirx</span>
+                        </h1>
+                        <div class="repo-meta">
+                            <span class="Label Label--secondary">Public</span>
+                        </div>
+                    </div>
+                    <div class="repo-actions">
+                        <div class="BtnGroup">
+                            <a href="#" class="btn btn-primary" id="downloadBtn">
+                                <svg class="octicon octicon-download" width="16" height="16">
+                                    <path d="M7.47 10.78a.75.75 0 0 1 1.06 0l3.25-3.25a.75.75 0 0 0-1.06-1.06L8.75 8.44V1.75a.75.75 0 0 0-1.5 0v6.69L5.28 6.47a.75.75 0 0 0-1.06 1.06l3.25 3.25ZM3.75 13a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z"></path>
+                                </svg>
+                                Code
+                            </a>
+                            <button class="btn btn-primary dropdown-toggle" id="codeDropdownToggle"></button>
+                        </div>
+                    </div>
+                </div>
+                <p class="repo-description">A Slack <-> IRC relay</p>
+                <div class="repo-stats">
+                    <a href="#" class="repo-stat-item">
+                        <svg class="octicon octicon-eye" width="16" height="16">
+                            <path d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14c-1.981 0-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2ZM1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5c1.473 0 2.825-.742 3.955-1.715 1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.824 4.242 9.472 3.5 8 3.5c-1.473 0-2.825.742-3.955 1.715-1.124.967-1.954 2.096-2.366 2.717ZM8 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 10Z"></path>
+                        </svg>
+                        <span id="watchCount">42</span> watching
+                    </a>
+                    <a href="#" class="repo-stat-item">
+                        <svg class="octicon octicon-star" width="16" height="16">
+                            <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
+                        </svg>
+                        <span id="starCount">125</span> stars
+                    </a>
+                    <a href="#" class="repo-stat-item">
+                        <svg class="octicon octicon-repo-forked" width="16" height="16">
+                            <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path>
+                        </svg>
+                        <span id="forkCount">31</span> forks
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Layout -->
+        <div class="repository-content">
+            <div class="d-flex flex-wrap gutter">
+                <!-- Left Column - Files -->
+                <div class="col-9">
+                    <!-- File Navigation -->
+                    <div class="file-navigation">
+                        <div class="BtnGroup mr-2">
+                            <button class="btn btn-outline" id="navBack" disabled>
+                                <svg class="octicon octicon-chevron-left" width="16" height="16">
+                                    <path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06Z"></path>
+                                </svg>
+                            </button>
+                            <button class="btn btn-outline" id="navForward" disabled>
+                                <svg class="octicon octicon-chevron-right" width="16" height="16">
+                                    <path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <nav class="breadcrumb">
+                            <a href="#" class="breadcrumb-item" data-path="">slackirx</a>
+                            <span id="breadcrumbPath"></span>
+                        </nav>
+                        <button class="btn btn-outline ml-2" id="refreshBtn">
+                            <svg class="octicon octicon-sync" width="16" height="16">
+                                <path d="M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- File Explorer -->
+                    <div class="Box mb-3" id="fileExplorer">
+                        <div id="fileList">
+                            <div class="Box-row">
+                                <div class="text-center py-6">
+                                    <div class="spinner" style="width: 24px; height: 24px; border-width: 2px; margin: 0 auto 8px;"></div>
+                                    <p class="color-fg-muted mb-0">Loading files...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- File Viewer -->
+                    <div class="Box mb-3" id="fileViewer" style="display: none;">
+                        <div class="Box-header">
+                            <button class="btn btn-sm mr-2" id="backToExplorer">
+                                <svg class="octicon octicon-arrow-left" width="16" height="16">
+                                    <path d="M7.78 12.53a.75.75 0 0 1-1.06 0L2.47 8.28a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 1.06L4.81 7h7.44a.75.75 0 0 1 0 1.5H4.81l2.97 2.97a.75.75 0 0 1 0 1.06Z"></path>
+                                </svg>
+                            </button>
+                            <div class="Box-title" id="fileViewerTitle"></div>
+                            <div class="ml-auto">
+                                <button class="btn btn-sm mr-2" id="rawFileBtn">Raw</button>
+                                <button class="btn btn-sm" id="downloadFileBtn">
+                                    <svg class="octicon octicon-download" width="16" height="16">
+                                        <path d="M7.47 10.78a.75.75 0 0 1 1.06 0l3.25-3.25a.75.75 0 0 0-1.06-1.06L8.75 8.44V1.75a.75.75 0 0 0-1.5 0v6.69L5.28 6.47a.75.75 0 0 0-1.06 1.06l3.25 3.25ZM3.75 13a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="Box-body p-0">
+                            <div class="file-content" id="fileContent">
+                                <div class="text-center py-6">
+                                    <div class="spinner" style="width: 24px; height: 24px; border-width: 2px; margin: 0 auto 8px;"></div>
+                                    <p class="color-fg-muted mb-0">Loading file...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- README -->
+                    <div class="Box mb-3" id="readmeSection">
+                        <div class="Box-header">
+                            <div class="Box-title">
+                                <svg class="octicon octicon-book mr-2" width="16" height="16">
+                                    <path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75V1.75Zm8.755 3a2.25 2.25 0 0 1 2.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322Zm-1.504 7.324a2.25 2.25 0 0 0-1.992-1.572H1.5V2.75h3.757a2.25 2.25 0 0 1 2.25 2.25l-.004 7.322Z"></path>
+                                </svg>
+                                README.md
+                            </div>
+                        </div>
+                        <div class="Box-body">
+                            <article class="markdown-body" id="readmeContent">
+                                <div class="text-center py-6">
+                                    <div class="spinner" style="width: 24px; height: 24px; border-width: 2px; margin: 0 auto 8px;"></div>
+                                    <p class="color-fg-muted mb-0">Loading README...</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Sidebar -->
+                <div class="col-3">
+                    <!-- About -->
+                    <div class="Box mb-3">
+                        <div class="Box-header">
+                            <h3 class="Box-title">About</h3>
+                        </div>
+                        <div class="Box-body">
+                            <p>A Slack <-> IRC relay</p>
+                            <div class="mt-3">
+                                <a href="#" class="d-block mb-2">
+                                    <svg class="octicon octicon-eye" width="16" height="16">
+                                        <use xlink:href="#octicon-eye"></use>
+                                    </svg>
+                                    <span class="ml-1">42 watching</span>
+                                </a>
+                                <a href="#" class="d-block mb-2">
+                                    <svg class="octicon octicon-star" width="16" height="16">
+                                        <use xlink:href="#octicon-star"></use>
+                                    </svg>
+                                    <span class="ml-1">125 stars</span>
+                                </a>
+                                <a href="#" class="d-block">
+                                    <svg class="octicon octicon-repo-forked" width="16" height="16">
+                                        <use xlink:href="#octicon-repo-forked"></use>
+                                    </svg>
+                                    <span class="ml-1">31 forks</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Releases -->
+                    <div class="Box mb-3">
+                        <div class="Box-header">
+                            <h3 class="Box-title">Releases</h3>
+                        </div>
+                        <div class="Box-body">
+                            <p class="color-fg-muted mb-0">No releases published</p>
+                        </div>
+                    </div>
+
+                    <!-- Packages -->
+                    <div class="Box mb-3">
+                        <div class="Box-header">
+                            <h3 class="Box-title">Packages</h3>
+                        </div>
+                        <div class="Box-body">
+                            <p class="color-fg-muted mb-0">No packages published</p>
+                        </div>
+                    </div>
+
+                    <!-- Repository Details -->
+                    <div class="Box mb-3">
+                        <div class="Box-header">
+                            <h3 class="Box-title">Repository details</h3>
+                        </div>
+                        <div class="Box-body">
+                            <div class="mb-2">
+                                <svg class="octicon octicon-file" width="16" height="16">
+                                    <path d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25V1.75Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V4.664a.25.25 0 0 0-.073-.177l-2.914-2.914a.25.25 0 0 0-.177-.073H3.75Z"></path>
+                                </svg>
+                                <span class="ml-1" id="fileStats">Loading...</span>
+                            </div>
+                            <div>
+                                <svg class="octicon octicon-history" width="16" height="16">
+                                    <path d="m.427 1.927 1.215 1.215a8.002 8.002 0 1 1-1.6 5.685.75.75 0 1 1 1.493-.154 6.5 6.5 0 1 0 1.18-4.458l1.358 1.358A.25.25 0 0 1 3.896 6H.25A.25.25 0 0 1 0 5.75V2.104a.25.25 0 0 1 .427-.177ZM7.75 4a.75.75 0 0 1 .75.75v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.75.75 0 0 1 7 8.25v-3.5A.75.75 0 0 1 7.75 4Z"></path>
+                                </svg>
+                                <span class="ml-1">Last updated <span id="lastUpdated">just now</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="Box">
+                        <div class="Box-header">
+                            <h3 class="Box-title">Languages</h3>
+                        </div>
+                        <div class="Box-body">
+                            <div class="d-flex mb-2">
+                                <span class="repo-language-color" style="background-color: #f1e05a;"></span>
+                                <span class="flex-auto">JavaScript</span>
+                                <span>100%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 100%; background-color: #f1e05a;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Code Dropdown -->
+    <div class="dropdown-menu" id="codeDropdown" style="display: none;">
+        <div class="dropdown-header">Download ZIP</div>
+        <a class="dropdown-item" href="#" id="downloadZipLink">
+            <svg class="octicon octicon-file-zip" width="16" height="16">
+                <path d="M3.5 1.75v11.5c0 .138.112.25.25.25h1.5a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1-.75-.75v-13a.75.75 0 0 1 .75-.75h6.836c.414 0 .808.168 1.093.463l2.914 2.914a1.75 1.75 0 0 1 .463 1.093v5.79a.75.75 0 0 1-1.5 0V6h-2.75A1.75 1.75 0 0 1 8 4.25V1.5H3.75a.25.25 0 0 0-.25.25Zm5.75 0V4.25c0 .138.112.25.25.25h2.75a.25.25 0 0 0 .25-.25V3.311L9.439 1.5H9.25a.25.25 0 0 0-.25.25Zm-1.5 10.5a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 .75.75v.25h1.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1-.75-.75v-1Zm.75-9.25a.75.75 0 0 0-.75.75v.5c0 .414.336.75.75.75h.5a.75.75 0 0 0 .75-.75v-.5a.75.75 0 0 0-.75-.75h-.5Z"></path>
+            </svg>
+            Download ZIP
+        </a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/5.1.0/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
