@@ -385,6 +385,65 @@ body {
     border-top: none;
 }
 
+/* СТИЛИ ДЛЯ СТРОК ФАЙЛОВ - УЛЬТРАУСТОЙЧИВЫЕ */
+.file-item-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 32px;
+}
+
+.file-item-icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.file-item-content {
+    flex: 1;
+    min-width: 0; /* Критически важно для усечения текста */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.file-item-name {
+    flex: 1;
+    min-width: 0; /* Критически важно для усечения текста */
+    color: var(--color-fg-default);
+    text-align: left;
+    word-break: break-all; /* Ломаем длинные слова */
+    overflow-wrap: anywhere; /* Современная альтернатива */
+    hyphens: auto; /* Перенос слов при необходимости */
+}
+
+.file-item-size {
+    flex-shrink: 0;
+    color: var(--color-fg-muted);
+    font-size: 12px;
+    white-space: nowrap;
+    margin-left: auto;
+}
+
+/* Исправляем стили для существующих элементов */
+.Box-row .flex-auto {
+    min-width: 0; /* Разрешаем усечение */
+}
+
+.Box-row a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+    text-decoration: none;
+}
+
 /* File Content */
 .file-content {
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
@@ -561,54 +620,6 @@ body {
     padding-bottom: 48px;
 }
 
-/* Responsive */
-@media (max-width: 1011px) {
-    .col-9,
-    .col-3 {
-        width: 100%;
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    .col-3 {
-        margin-top: 24px;
-    }
-
-    .repo-title {
-        font-size: 24px;
-    }
-
-    .repo-description {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 767px) {
-    .container-xl {
-        padding: 0 16px;
-    }
-
-    .Header-content {
-        padding: 0 16px;
-    }
-
-    .repo-stats {
-        flex-wrap: wrap;
-        gap: 16px;
-    }
-
-    .d-flex {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .repo-actions {
-        margin-left: 0;
-        margin-top: 16px;
-        align-self: flex-start;
-    }
-}
-
 /* Breadcrumb separator */
 .breadcrumb-separator {
     color: var(--color-fg-muted);
@@ -736,4 +747,644 @@ body {
     display: flex;
     justify-content: center;
     gap: 8px;
+}
+
+/* МОБИЛЬНАЯ АДАПТАЦИЯ */
+/* Для планшетов (до 1011px) */
+@media (max-width: 1011px) {
+    .container-xl {
+        padding: 0 20px;
+    }
+
+    .Header-content {
+        padding: 0 20px;
+    }
+
+    .col-9,
+    .col-3 {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .col-3 {
+        margin-top: 24px;
+    }
+
+    .repo-title {
+        font-size: 28px;
+        text-align: left;
+        line-height: 1.2;
+    }
+
+    .repo-description {
+        font-size: 18px;
+        text-align: left;
+        line-height: 1.4;
+    }
+
+    .repository-header {
+        padding: 24px 0 20px;
+    }
+
+    .repo-stats {
+        gap: 20px;
+    }
+
+    /* УЛЬТРАСТАБИЛЬНЫЕ СТРОКИ ФАЙЛОВ */
+    .Box-row {
+        text-align: left;
+        align-items: flex-start;
+        padding: 12px 16px;
+        overflow: hidden;
+    }
+
+    .Box-row .flex-auto {
+        text-align: left;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .Box-row .text-right {
+        text-align: left;
+        margin-top: 4px;
+        font-size: 12px;
+        flex-shrink: 0;
+    }
+
+    /* Кнопки файлового навигатора */
+    .file-navigation {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .breadcrumb {
+        order: 2;
+        width: 100%;
+        margin-top: 8px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .breadcrumb-item {
+        text-align: left;
+    }
+}
+
+/* Для мобильных (до 767px) */
+@media (max-width: 767px) {
+    body {
+        font-size: 13px;
+    }
+
+    .container-xl {
+        padding: 0 16px;
+    }
+
+    .Header-content {
+        padding: 12px 16px;
+    }
+
+    .Header {
+        padding: 0;
+    }
+
+    .repository-header {
+        padding: 20px 0 16px;
+        margin-bottom: 20px;
+    }
+
+    .d-flex.flex-items-center {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .repo-actions {
+        margin-left: 0;
+        margin-top: 16px;
+        align-self: stretch;
+        width: 100%;
+    }
+
+    .repo-actions .BtnGroup {
+        width: 100%;
+    }
+
+    .repo-actions .btn {
+        flex: 1;
+        text-align: center;
+    }
+
+    .repo-title {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .repo-description {
+        font-size: 16px;
+        text-align: left;
+        margin-bottom: 12px;
+    }
+
+    .avatar-placeholder {
+        width: 48px;
+        height: 48px;
+        font-size: 18px;
+    }
+
+    .mr-3 {
+        margin-right: 12px;
+    }
+
+    .repo-stats {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 12px;
+    }
+
+    .repo-stat-item {
+        justify-content: flex-start;
+        font-size: 13px;
+    }
+
+    /* УЛЬТРАСТАБИЛЬНЫЕ СТРОКИ ФАЙЛОВ - ОСНОВНОЕ ИСПРАВЛЕНИЕ */
+    .file-navigation {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .BtnGroup.mr-2 {
+        margin-right: 0;
+        align-self: flex-start;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .btn-sm {
+        padding: 3px 8px;
+        font-size: 11px;
+    }
+
+    /* СТРОКИ ФАЙЛОВ - ГЛАВНОЕ ИСПРАВЛЕНИЕ */
+    .Box {
+        border-radius: 4px;
+    }
+
+    .Box-header {
+        padding: 10px 14px;
+    }
+
+    .Box-body {
+        padding: 14px;
+    }
+
+    .Box-row {
+        padding: 10px 14px;
+        flex-direction: row; /* ВАЖНО: оставляем row, не column */
+        align-items: center;
+        gap: 8px;
+        overflow: hidden;
+        min-height: 44px;
+    }
+
+    /* Иконка и название вместе всегда */
+    .Box-row .mr-2 {
+        margin-right: 8px;
+        margin-bottom: 0;
+        flex-shrink: 0;
+        font-size: 14px;
+        line-height: 1;
+    }
+
+    .Box-row .flex-auto {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        overflow: hidden;
+    }
+
+    /* Заставляем иконку и текст быть неразрывными */
+    .Box-row a {
+        display: flex;
+        align-items: center;
+        min-width: 0;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    /* Текст названия файла */
+    .Box-row a span.color-fg-default {
+        display: inline-block;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        flex: 1;
+        text-align: left;
+        line-height: 1.4;
+    }
+
+    /* Размер файла - всегда в конце строки */
+    .Box-row .text-right {
+        flex-shrink: 0;
+        text-align: right;
+        margin-left: auto;
+        font-size: 11px;
+        color: var(--color-fg-subtle);
+        white-space: nowrap;
+        min-width: 40px;
+    }
+
+    /* Контент файлов */
+    .file-content {
+        padding: 12px;
+        font-size: 11px;
+    }
+
+    /* README */
+    .markdown-body {
+        font-size: 14px;
+    }
+
+    .markdown-body h1 {
+        font-size: 1.5em;
+    }
+
+    .markdown-body h2 {
+        font-size: 1.25em;
+    }
+
+    /* Sidebar боковая панель */
+    .col-3 .Box {
+        margin-bottom: 16px;
+    }
+
+    .col-3 .Box-header {
+        padding: 10px 14px;
+    }
+
+    .col-3 .Box-body {
+        padding: 14px;
+    }
+
+    .Box-title {
+        font-size: 13px;
+    }
+
+    .h3 {
+        font-size: 16px;
+    }
+
+    /* Кнопки в файловом просмотрщике */
+    .Box-header .ml-auto {
+        display: flex;
+        gap: 4px;
+    }
+
+    /* Video modal */
+    .video-modal {
+        margin: 0 16px;
+    }
+
+    .video-modal-header {
+        padding: 12px 16px;
+    }
+
+    .video-modal-body {
+        padding: 16px;
+    }
+
+    .video-modal-controls {
+        flex-direction: column;
+    }
+
+    .video-modal-controls .btn {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    /* Dropdown меню */
+    .dropdown-menu {
+        min-width: 140px;
+        font-size: 13px;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+        justify-content: flex-start;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 4px;
+        margin-top: 4px;
+    }
+
+    .breadcrumb::-webkit-scrollbar {
+        height: 3px;
+    }
+
+    .breadcrumb::-webkit-scrollbar-thumb {
+        background: var(--color-border-muted);
+        border-radius: 2px;
+    }
+}
+
+/* УЛЬТРАУЗКИЕ ЭКРАНЫ (до 480px) - КРИТИЧЕСКИ ВАЖНО */
+@media (max-width: 480px) {
+    .container-xl {
+        padding: 0 12px;
+    }
+
+    .Header-content {
+        padding: 10px 12px;
+    }
+
+    .repository-header {
+        padding: 16px 0 12px;
+    }
+
+    .repo-title {
+        font-size: 20px;
+    }
+
+    .repo-description {
+        font-size: 15px;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .Box {
+        border-radius: 3px;
+    }
+
+    .Box-header,
+    .Box-body,
+    .Box-row {
+        padding: 8px 12px;
+    }
+
+    .file-content {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    /* УЛЬТРАУСТОЙЧИВЫЕ СТРОКИ ФАЙЛОВ */
+    .Box-row {
+        padding: 8px 12px;
+        min-height: 40px;
+        gap: 6px;
+    }
+
+    .Box-row .mr-2 {
+        margin-right: 6px;
+        font-size: 13px;
+        width: 16px;
+        text-align: center;
+        flex-shrink: 0;
+    }
+
+    .Box-row .flex-auto {
+        min-width: 0;
+        gap: 6px;
+    }
+
+    /* Название файла - ультраустойчивое */
+    .Box-row a span.color-fg-default {
+        font-size: 12px;
+        line-height: 1.3;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-width: 50px; /* Минимальная ширина для отображения части имени */
+    }
+
+    /* Размер файла */
+    .Box-row .text-right {
+        font-size: 10px;
+        min-width: 35px;
+        padding-left: 4px;
+    }
+
+    /* Sidebar элементы */
+    .col-3 .d-flex.mb-2 {
+        font-size: 12px;
+    }
+
+    .repo-language-color {
+        width: 10px;
+        height: 10px;
+    }
+
+    .progress {
+        height: 6px;
+    }
+
+    /* Loading overlay */
+    .loading-text {
+        font-size: 13px;
+        padding: 0 12px;
+    }
+
+    .spinner {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* СУПЕР УЗКИЕ ЭКРАНЫ (до 360px) - ЭКСТРЕМАЛЬНЫЙ СЛУЧАЙ */
+@media (max-width: 360px) {
+    .container-xl {
+        padding: 0 8px;
+    }
+
+    .Header-content {
+        padding: 8px 8px;
+    }
+
+    .repository-header {
+        padding: 12px 0 8px;
+    }
+
+    .Box-row {
+        padding: 6px 8px;
+        min-height: 36px;
+        gap: 4px;
+    }
+
+    /* Еще более компактные строки файлов */
+    .Box-row .mr-2 {
+        margin-right: 4px;
+        font-size: 12px;
+        width: 14px;
+    }
+
+    .Box-row a span.color-fg-default {
+        font-size: 11px;
+        min-width: 40px;
+    }
+
+    .Box-row .text-right {
+        font-size: 9px;
+        min-width: 30px;
+    }
+
+    /* Убираем лишние отступы */
+    .ml-2, .mr-2, .ml-3, .mr-3 {
+        margin: 2px !important;
+    }
+
+    .btn {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+}
+
+/* Особые исправления для выравнивания */
+@media (max-width: 767px) {
+    /* Все заголовки и текст выравниваем по левому краю */
+    .repo-title,
+    .repo-description,
+    .Box-title,
+    .h3,
+    .color-fg-muted,
+    .text-center {
+        text-align: left !important;
+    }
+
+    /* Центрируем только действительно нужные элементы */
+    .loading-overlay .spinner-container,
+    .Box-row > .text-center,
+    .file-content > .text-center {
+        text-align: center !important;
+    }
+
+    /* Исправляем flex-контейнеры */
+    .d-flex.flex-items-center:not(.Box-header) {
+        align-items: flex-start;
+    }
+
+    /* Убираем лишние отступы справа */
+    .ml-auto:not(.Box-header .ml-auto) {
+        margin-left: 0;
+    }
+
+    /* Ультра-устойчивость для строк файлов */
+    .Box-row {
+        overflow: visible !important;
+    }
+
+    .Box-row .flex-auto {
+        overflow: visible !important;
+    }
+
+    /* Гарантируем, что иконка и название всегда вместе */
+    .Box-row a {
+        display: flex !important;
+        align-items: center !important;
+        min-width: 0 !important;
+        white-space: nowrap !important;
+    }
+
+    /* Принудительно убираем переносы внутри ссылки */
+    .Box-row a > * {
+        white-space: nowrap !important;
+    }
+}
+
+/* Для горизонтальной ориентации на мобильных */
+@media (max-height: 500px) and (orientation: landscape) {
+    .repository-header {
+        padding: 16px 0;
+    }
+
+    .repo-title {
+        font-size: 20px;
+    }
+
+    .repo-description {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .repo-stats {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .file-navigation {
+        margin-bottom: 12px;
+    }
+
+    .Box {
+        margin-bottom: 12px;
+    }
+}
+
+/* Улучшаем доступность и взаимодействие на мобильных */
+@media (max-width: 767px) {
+    /* Увеличиваем зону клика для ссылок */
+    .Box-row a,
+    .breadcrumb-item,
+    .repo-stat-item {
+        min-height: 24px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    /* Делаем кнопки более удобными для нажатия */
+    .btn {
+        min-height: 32px;
+    }
+
+    /* Улучшаем отступы в навигации файлов */
+    .file-navigation .BtnGroup {
+        gap: 1px;
+    }
+
+    /* Исправляем выравнивание иконок в кнопках */
+    .btn .octicon {
+        vertical-align: middle;
+    }
+}
+
+/* Специальные классы для ультраустойчивых файловых строк */
+.file-item-unbreakable {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 32px;
+    overflow: hidden;
+}
+
+.file-icon-fixed {
+    flex-shrink: 0;
+    width: 20px;
+    margin-right: 8px;
+    text-align: center;
+}
+
+.file-name-unbreakable {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.file-size-fixed {
+    flex-shrink: 0;
+    margin-left: 8px;
+    font-size: 12px;
+    color: var(--color-fg-muted);
+    white-space: nowrap;
 }
